@@ -1,0 +1,109 @@
+.Section-Heading{
+    > h1{
+        font-weight: 100;
+        margin-bottom: em(15);
+        @include bp(768){
+            margin: 0;
+            font-size: 48px;
+            width: 420px;
+            line-height: 1.3;
+        }
+        @include bp(992){
+            width: auto;
+        }
+    }
+}
+
+.Hero{
+    // Dark mode
+    $border-dark: #252525;
+    @include bp(768){
+        flex: 1 100%;
+        border-bottom: 1px solid $border-light;
+        padding-left: em(40);
+        padding-bottom: em(40);
+        .dark &{
+            border-bottom: 1px solid $border-dark;
+        }
+    }
+    @include bp(992){
+        padding-left: em(70);
+        padding-bottom: em(50);
+    }
+}
+
+.Col{
+    > p{
+        font-size: 20px;
+        font-weight: $roboto-thin;
+        line-height: 1.7;
+    }
+    > .Link-medium{
+        margin-top: 10px;
+        display: inline-block;
+    }
+    > .mt{
+        margin-top: em(30);
+    }
+    @include bp(768){
+        // flex: 1 50%; // will not work if applied in IE11
+        width: 50%;
+        padding: em(40);
+        > .Link-medium{
+            margin-top: em(30);
+        }
+        &:not(:last-child){
+            text-align: right;
+            > p{
+                font-size: em(24);
+            }
+        }
+        &.mt{
+            // Dark mode
+            $border-dark: #252525;
+            margin-top: 0;
+            height: calc(100vh - 295px);
+            border-left: 1px solid $border-light;
+            .dark &{
+                border-left: 1px solid $border-dark;
+            }
+        }
+    }
+    @include bp(992){
+        padding: em(50);
+        &.mt{
+            height: calc(100vh - 245px);
+        }
+    }
+}
+
+.List{
+    margin-top: em(30);
+    > * + *{
+        margin-top: em(30);
+    }
+    &-item{
+        > strong{
+            margin-top: 10px;
+            display: block;
+            font-size: 18px;
+            .dark &{
+                color: darkgray;
+            }
+        }
+        > p{
+            margin-top: 10px;
+            font-weight: 500;
+            + p{
+                font-weight: 300;
+            }
+        }
+    }
+    @include bp(992){
+        margin-top: em(50);
+        > * + *{
+            margin-top: em(50);
+        }
+    }
+}
+

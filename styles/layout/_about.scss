@@ -1,0 +1,38 @@
+.Skills{
+    margin-top: em(50);
+    @include bp(768){
+        margin-top: 0;
+        padding: 0 em(40);
+    }
+    .Skill{
+        font-weight: 300;
+    }
+    .Skill + .Skill{
+        margin-top: em(20);
+    }
+    .Skill > strong{
+        display: block;
+        font-weight: 500;
+    }
+    > strong{
+        font-size: em(20);
+        margin-bottom: em(40);
+    }
+    .dark &{
+        *{
+            color: white;
+        }
+    }
+}
+
+@include bp(768){
+    .Section.Inner{
+        padding-left: em(40);
+    }
+}
+@include bp(1366){
+    .Section.Inner{
+        max-width: em(1366);
+        padding-left: em(100);
+    }
+}
