@@ -1,4 +1,481 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #111;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
-  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
+}
+
+@media (min-width: 48em) {
+  body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+a:hover {
+  color: #106213;
+}
+
+::-moz-selection {
+  background-color: #106213;
+  color: white;
+}
+
+::selection {
+  background-color: #106213;
+  color: white;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+@media (min-width: 48em) {
+  .container {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 75em) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.left-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.left-container > .title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+  margin: 70px 0 50px;
+}
+
+@media (min-width: 48em) {
+  .left-container > .title {
+    margin: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 48em) {
+  .left-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    max-width: 150px;
+  }
+}
+
+@media (min-width: 75em) {
+  .left-container {
+    max-width: 210px;
+  }
+}
+
+.logo {
+  font-size: 20px;
+}
+
+@media (min-width: 48em) {
+  .logo {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+.social {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 30%;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social > * + * {
+  margin-left: 20px;
+}
+
+.social > li > a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (min-width: 48em) {
+  .social > li > a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 48em) {
+  .social {
+    margin-right: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.center-container > img {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 48em) {
+  .center-container {
+    margin-top: -30px;
+    margin-bottom: -30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background-color: gainsboro;
+  }
+}
+
+.right-container {
+  margin-top: 50px;
+}
+
+.right-container .header {
+  position: absolute;
+  top: 47px;
+  right: 20px;
+}
+
+.right-container .header > button {
+  background-color: transparent;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  border: 0;
+  outline: 0;
+}
+
+@media (min-width: 48em) {
+  .right-container .header > button {
+    height: 15px;
+  }
+}
+
+@media (min-width: 48em) {
+  .right-container .header {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 90px;
+  }
+}
+
+@media (min-width: 75em) {
+  .right-container .header {
+    padding-right: 50px;
+  }
+}
+
+.right-container .toggle > i::before, .right-container .toggle > i::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  margin: auto;
+  right: 0;
+  height: 2px;
+  background-color: #111;
+  width: 78%;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.right-container .toggle > i::before {
+  top: 0;
+}
+
+.open .right-container .toggle > i::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 0;
+}
+
+.right-container .toggle > i::after {
+  bottom: 0;
+}
+
+.open .right-container .toggle > i::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.right-container .search > i::before, .right-container .search > i::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  margin: auto;
+  right: 0;
+  border-color: #111;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.right-container .search > i::before {
+  top: 0;
+  bottom: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.right-container .search > i::after {
+  bottom: 1px;
+  border: 0;
+  width: 5px;
+  height: 2px;
+  background: black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: -19px;
+}
+
+@media (min-width: 48em) {
+  .right-container {
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 75em) {
+  .right-container {
+    padding-left: 120px;
+  }
+}
+
+.card-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  position: relative;
+}
+
+.card-title::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: lightgray;
+  bottom: -15px;
+}
+
+@media (min-width: 48em) {
+  .card-title {
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+.card-txt {
+  color: darkgray;
+  line-height: 1.8;
+  font-size: 14px;
+  margin: 30px 0;
+}
+
+.card-btn {
+  padding: 15px 40px;
+  font-weight: 700;
+  border: 1px solid gainsboro;
+  background-color: white;
+}
+
+.card-btn:hover {
+  border-color: #106213;
+  color: #106213;
+}
+
+@media (min-width: 75em) {
+  .card {
+    width: 70%;
+  }
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+}
+
+.carousel > * + * {
+  margin-left: 20px;
+}
+
+.carousel > .item > img {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media (min-width: 75em) {
+  .carousel {
+    margin-right: -30px;
+  }
+}
+
+.pagination {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pagination .arrows > button {
+  width: 30px;
+  height: 15px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  position: relative;
+}
+
+.pagination .arrows > button > i::before, .pagination .arrows > button > i::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.pagination .arrows > button > i::before {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+}
+
+.pagination .arrows > button > i::after {
+  top: 1px;
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent transparent black black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  bottom: 0;
+  margin: auto;
+}
+
+.pagination .arrows .arrow-left > i::before {
+  left: 0;
+}
+
+.pagination .arrows .arrow-left > i::after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.pagination .arrows .arrow-right > i::before {
+  right: 0;
+}
+
+.pagination .arrows .arrow-right > i::after {
+  right: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.pagination .page {
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pagination .page::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  background-color: darkgray;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: calc(-100% - 15px);
+}
+
+@media (min-width: 75em) {
+  .pagination {
+    padding-right: 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
