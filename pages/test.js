@@ -7,7 +7,7 @@ export default () => (
     <main className='🐸_ Wrapper _🐱'>
       <Header />
       <section className="_ Section Inner _">
-        <script data-ad-client="ca-pub-0610053756453486" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+        <p>test</p>
       </section>
       <Aside />
     </main>
