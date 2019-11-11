@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BWM Responsive page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <nav class="navigation">
+                <a href="#!">
+                    <img src="img/logo.png" alt="" class="logo">
+                </a>
+                <button class="js-btn">☰</button>
+            </nav>
+            <header class="header">
+                <h2 class="title">All Models</h2>
+                <ul class="pills">
+                    <li class="pill active">Sedan</li>
+                    <li class="pill">Combi</li>
+                    <li class="pill">Cabrio</li>
+                    <li class="pill">SUV</li>
+                </ul>
+            </header>
+            <div class="card">
+                <div class="card_top">
+                    <strong class="name">BMW 420 i</strong>
+                    <span>360°</span>
+                </div>
+                <div class="card_mid">
+                    <img src="img/car1.png" alt="">
+                </div>
+                <div class="card_bottom">
+                    <div>
+                        <img src="img/settings.svg" alt="">
+                        <small>320KW</small>
+                    </div>
+                    <div>
+                        <img src="img/flash.svg" alt="">
+                        <small>4.2SEC</small>
+                    </div>
+                    <div>
+                        <img src="img/car.svg" alt="">
+                        <small>260°</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_top">
+                    <strong class="name">BMW 420 i</strong>
+                    <span>360°</span>
+                </div>
+                <div class="card_mid">
+                    <img src="img/car2.png" alt="">
+                </div>
+                <div class="card_bottom">
+                    <div>
+                        <img src="img/settings.svg" alt="">
+                        <small>320KW</small>
+                    </div>
+                    <div>
+                        <img src="img/flash.svg" alt="">
+                        <small>4.2SEC</small>
+                    </div>
+                    <div>
+                        <img src="img/car.svg" alt="">
+                        <small>260°</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner">
+            <header class="inner_header">
+                <button><img src="img/back.svg" alt=""></button>
+                <h2 class="inner_header-title">BMW 420 i</h2>
+                <span>360°</span>
+            </header>
+            <div class="inner_body">
+                <img src="img/car3.png" alt="" class="car">
+                <div class="info">
+                    <div>
+                        <small>POWER</small>
+                        320kw
+                    </div>
+                    <div>
+                        <small>0-100km/h</small>
+                        4.2sec
+                    </div>
+                    <div>
+                        <small>MAX SPEED</small>
+                        260*
+                    </div>
+                </div>
+            </div>
+            <div class="inner_bottom">
+                <div class="gallery">
+                    <div>
+                        <img src="img/car4.png" alt="">
+                    </div>
+                    <div>
+                        <img src="img/car5.png" alt="">
+                    </div>
+                    <div>
+                        <img src="img/car6.png" alt="">
+                    </div>
+                </div>
+                <button>Test drive</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var btn = document.querySelector(".js-btn");
+    var btn2 = document.querySelector(".inner_header > button");
+    btn.addEventListener("click", function() {
+        this.classList.toggle('active');
+        document.body.classList.toggle('show');
+    });
+    btn2.addEventListener("click", function() {
+        btn.classList.remove('active');
+        document.body.classList.remove('show');
+    });
+</script>
+</html>
