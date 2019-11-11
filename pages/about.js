@@ -1,6 +1,7 @@
 import Layout from '../components/layout'
 import Header from '../components/header'
 import Aside from '../components/aside'
+import Footer from '../components/footer'
 
 export default () => (
   <Layout title='Jech - Web Developer | About me'>
@@ -38,6 +39,7 @@ export default () => (
         </div>
       </section>
       <Aside />
+      <Footer />
     </main>
   </Layout>
 )

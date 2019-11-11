@@ -1,6 +1,7 @@
 import Layout from '../components/layout'
 import Header from '../components/header'
 import Aside from '../components/aside'
+import Footer from '../components/footer'
 import Link from 'next/link'
 
 export default () => (
@@ -37,6 +38,7 @@ export default () => (
         </div>
       </section>
       <Aside />
+      <Footer />
     </main>
   </Layout>
 )
