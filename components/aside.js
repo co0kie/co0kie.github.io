@@ -12,8 +12,8 @@ class LoggingButton extends React.Component {
 }
 export default () => (
     <aside className="_ Aside _">
-        <a href="https://codepen.io/co0kie" target="_blank" rel="noreferrer" className="💩 Aside-link">codepen</a>
-        <a href="https://www.youtube.com/channel/UCZnuUnd4XeKxfuTPFFs9OBA?view_as=subscriber" target="_blank" rel="noreferrer" className="📺 Aside-link">youtube</a>
+        <a href="https://codepen.io/co0kie" target="_blank" rel="noopener noreferrer" className="💩 Aside-link" title="https://codepen.io/co0kie"><img src="images/codepen.svg" alt="https://codepen.io/co0kie"/></a>
+        <a href="https://www.youtube.com/channel/UCZnuUnd4XeKxfuTPFFs9OBA?view_as=subscriber" target="_blank" rel="noopener noreferrer" className="📺 Aside-link" title="https://www.youtube.com/user/subs373n"><img src="images/youtube.svg" alt="https://www.youtube.com/user/subs373n"/></a>
         <LoggingButton />
     </aside>
 )

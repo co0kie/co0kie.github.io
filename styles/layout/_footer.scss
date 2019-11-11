@@ -2,7 +2,16 @@
     position: fixed;
     right: 20px;
     bottom: 10px;
+    display: none;
+    @include bp(992){
+        display: block;
+    }
     > small{
         color: darkgray;
+    }
+    a{
+        &:hover{
+            border-bottom: 1px dotted;
+        }
     }
 }
