@@ -7,13 +7,16 @@ body{
   height: 100vh;
   display: flex;
 }
-button{
-  animation-name: shake;
-  animation-duration: 0.6s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-  animation-delay: 500ms;
-  animation-play-state: paused;
+.overlay{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+}
+.bin{
   background-image: repeating-linear-gradient(to right, transparent, transparent 5px, #000000 5px, #000000 7px, transparent 7px);
   background-size: 11px 24px;
   background-position: 2px 13px;
@@ -60,7 +63,11 @@ button{
   }
   &:focus,
   &:active{
-    animation-play-state: running;
+    ~ .overlay{
+      pointer-events: inherit;
+      z-index: 2;
+      cursor: none;
+    }
     ~ div{
       > small{
         opacity: 1;
@@ -186,13 +193,4 @@ div{
     transform: translate(-30px, -20px) rotate(-80deg) scale(.4);
     opacity: 0;
   }
-}
-
-@keyframes shake{
-  0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-	30%,40%,50% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-	70%,80%,90% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
 }

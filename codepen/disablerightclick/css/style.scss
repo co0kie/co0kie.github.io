@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+body{
+    display: flex;
+    height: 100vh;
+}
+main{
+    margin: auto;
+    width: 60vw;
+    height: 40vh;
+    *{
+        margin: 20px 0;
+    }
+    td{
+        border: 1px solid lightgray;
+        padding: 8px;
+    }
+}
+*:not([disabled]){
+    position: relative;
+    z-index: 1;
+    // remove when moving to codepen
+    &[type]{
+        display: none;
+    }
+    // end
+}
+[disabled]{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    position: fixed;
+    top: 0;
+}
