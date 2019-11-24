@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 1em;
+    width: 100%;
+}
+
+.item{
+    padding: 10px;
+    background-color: beige;
+    border: 1px solid black;
+}
+
+// [type][placeholder='n']{
+//     display: none;
+// }
+[contenteditable]{
+    z-index: 2;
+    position: relative;
+}
+
+[type='checkbox']{
+    &:checked{
+        ~ [type][value]{
+            display: none;
+        }
+    }
+}
