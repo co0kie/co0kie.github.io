@@ -16,65 +16,59 @@ body{
   z-index: -1;
   pointer-events: none;
 }
+
 .bin{
-  background-image: repeating-linear-gradient(to right, transparent, transparent 5px, #000000 5px, #000000 7px, transparent 7px);
-  background-size: 11px 24px;
-  background-position: 2px 13px;
+  --black: #000000;
+  --binbg: #e6e6e6;
+  --width: 40px;
+  --height: 50px;
+  // bin stripe
+  background-image: 
+  repeating-linear-gradient(to right, 
+  transparent, transparent 5px, 
+  var(--black) 5px, 
+  var(--black) 7px, transparent 7px);
+  background-size: 11px calc(var(--height) / 2);
+  background-position: 2px center;
   background-repeat: repeat-x;
   margin: auto;
   position: relative;
-  background-color: #e6e6e6;
+  background-color: var(--binbg);
   border: 0;
   color: transparent;
-  width: 40px;
-  height: 50px;
-  border: 2px solid black;
+  width: var(--width);
+  height: var(--height);
+  border: 2px solid var(--black);
   border-radius: 0 0 6px 6px;
+  // bin cap
   &::after,
   &::before{
     content: '';
     position: absolute;
     transform-origin: left bottom;
     transition: 200ms ease-in-out;
+    border-width: 2px;
+    border-style: solid;
+    margin: auto;
+    right: 0;
   }
   &::after{
     left: -4px;
     top: -5px;
-    border-width: 2px;
-    border-style: solid;
     height: 7px;
-    width: 40px;
-    border: 2px solid black;
-    margin: auto;
-    right: 0;
-    background-color: #e6e6e6;
+    width: var(--width);
+    border: 2px solid var(--black);
+    background-color: var(--binbg);
     border-radius: 5px 5px 0 0;
   }
   &::before{
     top: -8px;
-    border-width: 2px;
-    border-style: solid;
     height: 2px;
     width: 10px;
-    border-color: black black transparent black;
+    border-color: var(--black) var(--black) transparent var(--black);
     left: 0;
-    right: 0;
-    margin: auto;
   }
-  &:focus,
-  &:active{
-    ~ .overlay{
-      pointer-events: inherit;
-      z-index: 2;
-      cursor: none;
-    }
-    ~ div{
-      > small{
-        opacity: 1;
-        animation: throw 300ms 30ms cubic-bezier(0.215, 0.61, 0.355, .3) forwards
-      }
-    }
-  }
+  // open bin
   &:focus,
   &:active{
     outline: none;
@@ -89,6 +83,7 @@ body{
       left: -23px;
       right: 3px;
     }
+    // hide cursor
     ~ div{
       cursor: none;
       z-index: 1;
@@ -96,8 +91,20 @@ body{
         cursor: none;
       }
     }
+    ~ .overlay{
+      pointer-events: inherit;
+      z-index: 2;
+      cursor: none;
+    }
+    ~ div{
+      > small{
+        opacity: 1;
+        animation: throw 300ms 30ms cubic-bezier(0.215, 0.61, 0.355, .3) forwards
+      }
+    }
   }
 }
+// overlay
 div{
   position: fixed;
   width: 100%; 
@@ -110,6 +117,7 @@ div{
     z-index: 1;
     cursor: none;
   }
+  // cursor ui
   > small{
     position: absolute;
     width: 20px;
@@ -121,42 +129,41 @@ div{
     bottom: 0;
     border-left: 1px solid black;
     opacity: 0;
-    &::before{
+    &::before,
+    &::after{
       content: '';
+      position: absolute;
+      width: 1px;
       border-right: 1px solid black;
+    }
+    &::before{
       height: 17px;
       transform: rotate(-42deg);
-      width: 1px;
-      position: absolute;
       top: -3px;
       right: 13px;
     }
     &::after{
-      content: '';
-      border-right: 1px solid black;
       height: 4px;
       transform: rotate(-112deg);
-      width: 1px;
-      position: absolute;
       top: 18px;
       right: 11px;
     }
     > i{
-      &::before{
+      &::before,
+      &::after{
         content: '';
         position: absolute;
-        border-left: 1px solid black;
         border-top: 1px solid black;
+      }
+      &::before{
+        border-left: 1px solid black;
         width: 4px;
         bottom: -4px;
         height: 4px;
         transform: rotate(66deg);
       }
       &::after{
-        content: '';
-        position: absolute;
         border-right: 1px solid black;
-        border-top: 1px solid black;
         width: 5px;
         bottom: -2px;
         height: 5px;
