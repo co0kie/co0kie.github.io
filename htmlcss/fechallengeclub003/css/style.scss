@@ -1,0 +1,116 @@
+:root {
+    --color-pink: #faa7ed;
+    --color-navy: #0c1f72;
+    --color-navy-opaque: rgba(6, 0, 79, 0.77);
+    --color-light: #ffffff;
+    --color-dark: #252525;
+  }
+*{
+    box-sizing: border-box;
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Source Serif Pro', serif;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+}
+
+.card-container{
+    --width: 689px;
+    --height: 378px;
+    padding: 47px 25px;
+    margin: auto;
+    width: 100%;
+    max-width: var(--width);
+    background-color: white;
+}
+
+.card-title{
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--color-dark);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    &-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+    }
+    &-item{
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-end;
+        &:hover{
+            transition: 200ms;
+            .card-details{
+                background-color: var(--color-navy);
+            }
+            &::after,
+            &::before{
+                transition: 200ms;
+                background-color: transparent;
+                mix-blend-mode: unset;
+            }
+        }
+        &::before,
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        &::before{
+            background-color: #faa7ed;
+            mix-blend-mode: color;
+        }
+        &::after{
+            background-color: #0c1f72;
+            mix-blend-mode: lighten;
+        }
+        &:hover{
+            .link{
+                display: block;
+            }
+        }
+    }
+    &-details{
+        background-color: var(--color-navy-opaque);
+        position: relative;
+        color: white;
+        padding: 10px;
+        z-index: 2;
+        > .name{
+            font-weight: 400;
+        }
+        > .title{
+            display: block;
+            font-family: Helvetica;
+            font-size: 14px;
+        }
+        > .link{
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            height: 23px;
+            margin: auto;
+            right: 8px;
+        }
+    }
+}
