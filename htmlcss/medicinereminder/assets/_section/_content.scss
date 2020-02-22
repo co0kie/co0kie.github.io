@@ -1,0 +1,164 @@
+.content{
+    background-color: $lightgray1;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+    &-main{
+        padding: 20px;
+        text-align: center;
+        transition: 200ms;
+        transition-delay: 150ms;
+        > h2{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 14px;
+            padding-right: 20px;
+            padding-left: 20px;
+            line-height: 2;
+            margin-bottom: 20px;
+            color: $lightgray2;
+            font-weight: 600;
+        }
+        &.hide{
+            transform: scale(.9);
+            opacity: 0;
+        }
+    }
+    .hero{
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+        padding: 20px;
+        display: block;
+    }
+    &-inner{
+        padding: 30px 20px;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        transform: scale(1.1);
+        opacity: 0;
+        pointer-events: none;
+        left: 0;
+        transition: 200ms;
+        transition-delay: 100ms;
+        &.show{
+            pointer-events: inherit;
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .timeline{
+        display: flex;
+        + .timeline{
+            margin-top: 15px;
+        }
+        > time{
+            width: 30%;
+            padding: 20px;
+            margin-top: 20px;
+            color: $lightgray2;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        &-content{
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+            background-color: $pink1;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            .top{
+                display: flex;
+                > .icons{
+                    border-top-left-radius: 13px;
+                }
+            }
+            .bottom{
+                display: flex;
+                > .icons{
+                    border-bottom-left-radius: 13px;
+                }
+            }
+        }
+        
+    }
+    .text{
+        color: white;
+        flex: 1;
+        padding: 20px;
+        > h2{
+            margin-bottom: 8px;
+            font-size: 20px;
+        }
+        > span{
+            font-size: 14px;
+            color: rgba(white,.6);
+        }
+    }
+    .icons{
+        background: linear-gradient($lightgray3, $lightgray4);
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        width: 30%;
+        justify-content: center;
+        > span{
+            overflow: hidden;
+            border-radius: 10px;
+            position: relative;
+            &::after,
+            &::before{
+                content: '';
+                position: absolute;
+            }
+            &::after{
+                right: 0;
+            }
+        }
+        .pill{
+            width: 50px;
+            height: 20px;
+            display: block;
+            box-shadow: 0px 10px 20px 0px rgba($orange3, 0.43);
+            &::after,
+            &::before{
+                top: 0;
+                width: 50%;
+                height: 100%;
+            }
+            &::before{
+                width: 50%;
+                background-color: $yellow;
+            }
+            &::after{
+                background-image: linear-gradient($pink3, $orange1);
+            }
+        }
+        .tablet{
+            width: 35px;
+            background-color: $orange2;
+            height: 35px;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px 0 rgba($orange2, 0.49);
+            &.blue{
+                background-color: $blue1;
+                box-shadow: 0px 10px 20px 0px rgba($blue1, 0.57);
+                &::before{
+                    background-color: $blue2;
+                }
+            }
+            &::before{
+                top: 0;
+                width: 6px;
+                height: 100%;
+                background-color: $orange3;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+}

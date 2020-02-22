@@ -1,0 +1,120 @@
+.footer{
+    margin: 20px 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    a{
+        font-size: 11px;
+        padding: 12px 15px;
+        display: flex;
+        align-items: flex-end;
+        border-radius: 10px;
+        &:not(.active){
+            &:hover{
+                .sched,
+                .user,
+                .stat{
+                    border-color: $pink1;
+                }
+                i{
+                    &::before{
+                        background-color: $pink1;
+                        
+                    }
+                    &::after{
+                        border-color: $pink1;
+                    }
+                }            
+            }
+        }
+        &.active{
+            background-color: $pink1;
+            color: white;
+        }
+        i{
+            position: relative;
+            &::before,
+            &::after{
+                content: '';
+                position: absolute;
+            }
+        }
+    }
+    .home{
+        margin-right: 10px;
+        height: 12px;
+        width: 15px;
+        background: white;
+        display: block;
+        border-radius: 2px;
+        &::before,
+        &::after{
+            border-style: solid;
+            border-radius: 3px;
+        }
+        &::before{
+            border-width: 6px 9px 8px 8px;
+            border-color: transparent transparent white;
+            height: 10px;
+            width: 0px;
+            top: -23px;
+            left: -1px;
+        }
+        &::after{
+            border-width: 6px 7px 8px 6px;
+            border-color: transparent transparent $pink1;
+            height: 7px;
+            width: 0px;
+            top: -18px;
+            left: 1px;
+            box-shadow: -4px 12px 0px -5px $pink1, 4px 12px 0px -5px $pink1;
+        }
+    }
+    .stat{
+        width: 16px;
+        height: 16px;
+        border-radius: 16px;
+        border: 2px solid $lightgray2;
+        &::before{
+            width: 9px;
+            height: 9px;
+            background-color: $lightgray2;
+            border: 2px solid white;
+            top: -5px;
+            right: -5px;
+            border-top-right-radius: 16px;
+        }
+    }
+    .sched{
+        width: 21px;
+        height: 11px;
+        border: 2px solid $lightgray2;
+        border-radius: 2px;
+        &::before{
+            background-color: $lightgray2;
+            width: 21px;
+            height: 6px;
+            top: -7px;
+            left: -2px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+    }
+    .user{
+        width: 16px;
+        height: 7px;
+        border: 2px solid $lightgray2;
+        border-top-right-radius: 4px;
+        border-bottom: 0;
+        border-top-left-radius: 4px;
+        &::before{
+            background-color: $lightgray2;
+            width: 8px;
+            height: 8px;
+            top: -12px;
+            left: 0;
+            border-radius: 8px;
+            right: 0;
+            margin: auto;
+        }
+    }
+}
