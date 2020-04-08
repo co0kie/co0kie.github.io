@@ -12,13 +12,19 @@ $green3: #163026;
 $green4: #169061;
 
 body{
-    display: flex;
     height: 100vh;
     margin: 0;
     padding: 0;
     background-color: #211d1d;
     font-family: 'Roboto', sans-serif;
 } 
+
+.wrap{
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 840px;
+}
 
 .container{
     width: 375px;
@@ -29,14 +35,14 @@ body{
 }
 
 .landscape-1{
-    background-image: url('../landscape.jpg');
+    background-image: url('http://co0kie.github.io/codepen/mindful/landscape.jpg');
     background-size: 770px;
     background-position: -392px -88px;
     background-color: $purple1;
 }
 
 .landscape-2{
-    background-image: url('../landscape2.jpg');
+    background-image: url('http://co0kie.github.io/codepen/mindful/landscape2.jpg');
     background-size: 1050px;
     background-position: -332px -1px;
 }
