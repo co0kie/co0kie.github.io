@@ -1,7 +1,7 @@
 import '../styles/styles.scss'
 import Head from 'next/head'
 
-export default ({ children, title = 'This is the default title' }) => (
+export default ({ children, title = 'Jech' }) => (
   <div>
     <Head>
       <meta charSet='utf-8' />

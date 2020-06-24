@@ -1,64 +1,68 @@
 html {
-    box-sizing: border-box;
-    overflow-y: scroll;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+*::selection {
+  background: $dark;
+  color: white;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px; 
+  font-family: $roboto;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  color: $gray;
+  transition: 200ms;
+  background-color: $dark;
+  background: linear-gradient(rgba($dark, 0.97), $dark);
+  background-repeat: repeat;
+  background-size: 3px 5px;
+  &.dark{
+    background-color: black;
   }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  .dark &{
+    color: ghostwhite;
   }
-  
-  *::selection {
-    background: $purple;
-    color: white;
+}
+
+p {
+  margin: 0;
+  .dark &{
+    color: ghostwhite;
   }
-  
-  html,
-  body {
-    height: 100%;
-    font-size: 16px; 
-    font-family: $roboto;
+}
+
+a {
+  text-decoration: none;
+  color: $gray;
+  .dark &{
+    color: ghostwhite;
   }
-  
-  body {
-    width: 100%;
-    min-height: 100%;
-    margin: 0;
-    color: $gray;
-    transition: 200ms;
-    &.dark{
-      background-color: black;
-    }
-  }
-  
-  
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    .dark &{
-      color: ghostwhite;
-    }
-  }
-  
-  p {
-    margin: 0;
-    .dark &{
-      color: ghostwhite;
-    }
-  }
-  
-  a {
-    text-decoration: none;
-    color: $gray;
-    .dark &{
-      color: ghostwhite;
-    }
-  }
-  
-  img {
-    display: block;
-  }
-  
-  ul {
-    padding: 0;
-    list-style: none;
-  }
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
   

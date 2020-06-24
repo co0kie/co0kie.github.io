@@ -2,7 +2,6 @@
 //! utilities
 @import "../styles/utils/mixins";              // global mixins
 @import "../styles/utils/variables";           // global variables
-@import "../styles/utils/helper";           // helper classes
 
 //! setup
 // @import "./styles/setup/normalize";           // normalize browsers to make more consistent
@@ -12,9 +11,7 @@
 @import "../styles/global/global";             // global styles
 
 //! sections
-@import "../styles/layout/header";
-@import "../styles/layout/body";
+// @import "../styles/layout/header";
+@import "../styles/layout/section";
 @import "../styles/layout/home";
-@import "../styles/layout/about";
-@import "../styles/layout/aside";
 @import "../styles/layout/footer";

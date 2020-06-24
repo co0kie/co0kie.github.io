@@ -1,0 +1,10 @@
+.Wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.Section{
+    padding: 0 em(20);
+    display: flex;
+    height: calc(100vh - 150px);
+}
