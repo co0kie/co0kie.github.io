@@ -13,7 +13,7 @@ export default () => (
             <h1 className="_ Italic _">About me</h1>
           </header>
           <p>
-            I’m Jech, a seasoned web developer with agile methodology background and with over 10 years industry experience. I first worked at Techforge as a web designer and developer for local business in the Philippines. In 2012, I joined Arcanys, a Swiss owned IT company based in Cebu where I developed my expertise in front end development and have supported clients from the Europe, Australia, and Hong Kong.
+            I’m Jech, a seasoned web developer with agile methodology background and with over 10 years industry experience. I first worked at Techforge as a web designer and developer for local business in the Philippines. In 2012, I joined Arcanys, a Swiss owned IT company based in Cebu where I developed my expertise in front end development and have supported clients from the Europe, Australia, and Hong Kong..
           </p>
         </article>
         <div className="_ Skills _">
