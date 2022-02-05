@@ -26,7 +26,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Ruda&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      as="style"
+      onload="this.rel='stylesheet'"
     />
     <link rel="stylesheet" href="assets/style.css" />
   </head>
@@ -45,7 +47,7 @@
   <body>
     <div class="splash">
       <div class="logo">
-        <img src="assets/img/logo.svg" alt="" />
+        <img src="assets/img/logo.svg" alt="" width="45" height="64" />
       </div>
       <div class="content">
         <p>Hi, I’m <a href="mailto:me@jerecho.com" title="Hi">Jech</a>,</p>
