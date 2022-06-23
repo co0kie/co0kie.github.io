@@ -7,7 +7,8 @@
       name="viewport"
       content="initial-scale=1.0, width=device-width, initial-scale=1"
     />
-    <title>Jerecho.com</title>
+    <title>Jerecho</title>
+    <meta name="description" content="Hi, I'm Jech, Web developer at Arcanys Inc.">
     <meta property="og:title" content="Jech - Web Developer" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.jerecho.com" />
@@ -42,8 +43,12 @@
           "educationRequirements": "Information Technology",
           "estimatedSalary": [
             {
-              "@type": "Number",
-              "amount": 1337
+              "amount":{
+                "@type": "MonetaryAmount0",
+                "currency": "BTC",
+                "minValue": "0",
+                "maxValue": "1337"
+              }
             }
           ],
           "occupationLocation": [
