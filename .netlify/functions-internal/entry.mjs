@@ -1,6 +1,6 @@
 import * as adapter from '@astrojs/netlify/netlify-functions.js';
 import { escape } from 'html-escaper';
-/* empty css                        *//* empty css                             *//* empty css                                 *//* empty css                       *//* empty css                      */import 'mime';
+/* empty css                        *//* empty css                                 *//* empty css                             *//* empty css                       *//* empty css                      */import 'mime';
 import 'kleur/colors';
 import 'string-width';
 import 'path-browserify';
@@ -1262,52 +1262,12 @@ var server_default = {
   renderToStaticMarkup
 };
 
-const $$metadata$h = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/Footer.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$h = createAstro("/@fs/C:/Project/astro/jerecho/src/components/Footer.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
-const $$Footer = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$h, $$props, $$slots);
-  Astro2.self = $$Footer;
-  const { footerClass } = Astro2.props;
-  const imgSrc = "assets/footer-dots.svg";
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<footer${addAttribute((footerClass ? footerClass : "footer") + " astro-5NAYDS26", "class")}${addAttribute("background-image: url(" + imgSrc + ")", "style")}>
-  <!-- <SocialMedia /> -->
-</footer>
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV8NVWT" height="0" width="0" style="display:none;visibility:hidden" class="astro-5NAYDS26"></iframe>
-</noscript>
-
-<!-- End Google Tag Manager (noscript) -->
-<!-- To do's -->
-<!-- Add work experiences -->
-<!-- Add animation -->
-<!-- Add UI framework? -->
-<!-- https://www.youtube.com/watch?v=T33NN_pPeNI -->
-<!-- https://css-tricks.com/svg-line-animation-works/ -->
-
-`;
-});
-
-const $$file$h = "C:/Project/astro/jerecho/src/components/Footer.astro";
-const $$url$h = undefined;
-
-const $$module1$7 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  $$metadata: $$metadata$h,
-  default: $$Footer,
-  file: $$file$h,
-  url: $$url$h
-}, Symbol.toStringTag, { value: 'Module' }));
-
 var __freeze$2 = Object.freeze;
 var __defProp$2 = Object.defineProperty;
 var __template$2 = (cooked, raw) => __freeze$2(__defProp$2(cooked, "raw", { value: __freeze$2(raw || cooked.slice()) }));
 var _a$2;
-const $$metadata$g = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/MetaHead.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$g = createAstro("/@fs/C:/Project/astro/jerecho/src/components/MetaHead.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$g = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/MetaHead.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$g = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/MetaHead.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$MetaHead = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$g, $$props, $$slots);
   Astro2.self = $$MetaHead;
@@ -1315,10 +1275,10 @@ const $$MetaHead = createComponent(async ($$result, $$props, $$slots) => {
     title = "Jech | Web Developer and designer",
     description = "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines"
   } = Astro2.props;
-  return renderTemplate(_a$2 || (_a$2 = __template$2(['<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width">\n<meta name="generator"', ">\n<title>", '</title>\n\n<meta name="description"', '>\n\n<!-- Open Graph Tags (Facebook) -->\n<meta property="og:type" content="website">\n<meta property="og:title"', '>\n<meta property="og:url" content="https://jerecho.com">\n<meta property="og:description"', '>\n<meta property="og:image" content="assets/og-cover.png">\n\n<link rel="icon" type="image/svg+xml" href="assets/fav.svg">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n\n<link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&family=Rubik+Glitch&family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">\n\n<!-- Google Tag Manager -->\n<script>\n  (function (w, d, s, l, i) {\n    w[l] = w[l] || [];\n    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });\n    var f = d.getElementsByTagName(s)[0],\n      j = d.createElement(s),\n      dl = l != "dataLayer" ? "&l=" + l : "";\n    j.async = true;\n    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;\n    f.parentNode.insertBefore(j, f);\n  })(window, document, "script", "dataLayer", "GTM-TV8NVWT");\n<\/script>\n<!-- End Google Tag Manager -->\n'])), addAttribute(Astro2.generator, "content"), title, addAttribute(description, "content"), addAttribute(title, "content"), addAttribute(description, "content"));
+  return renderTemplate(_a$2 || (_a$2 = __template$2(['<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width">\n<meta name="generator"', ">\n<title>", '</title>\n\n<meta name="description"', '>\n\n<!-- Open Graph Tags (Facebook) -->\n<meta property="og:type" content="website">\n<meta property="og:title"', '>\n<meta property="og:url" content="https://jerecho.com">\n<meta property="og:description"', '>\n<meta property="og:image" content="assets/og-cover.png">\n\n<link rel="icon" type="image/svg+xml" href="assets/fav.svg">\n<link rel="mask-icon" href="assets/fav.svg" color="#16161d">\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n\n<link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&family=Rubik+Glitch&family=Roboto+Mono:wght@100;400&display=swap" rel="stylesheet">\n\n<!-- Google Tag Manager -->\n<script>\n  (function (w, d, s, l, i) {\n    w[l] = w[l] || [];\n    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });\n    var f = d.getElementsByTagName(s)[0],\n      j = d.createElement(s),\n      dl = l != "dataLayer" ? "&l=" + l : "";\n    j.async = true;\n    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;\n    f.parentNode.insertBefore(j, f);\n  })(window, document, "script", "dataLayer", "GTM-TV8NVWT");\n<\/script>\n<!-- End Google Tag Manager -->\n'])), addAttribute(Astro2.generator, "content"), title, addAttribute(description, "content"), addAttribute(title, "content"), addAttribute(description, "content"));
 });
 
-const $$file$g = "C:/Project/astro/jerecho/src/components/MetaHead.astro";
+const $$file$g = "C:/Project/old-github/co0kie.github.io/src/components/MetaHead.astro";
 const $$url$g = undefined;
 
 const $$module1$6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1329,8 +1289,8 @@ const $$module1$6 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
   url: $$url$g
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$f = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/Nav.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$f = createAstro("/@fs/C:/Project/astro/jerecho/src/components/Nav.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$f = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Nav.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$f = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Nav.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$Nav = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
   Astro2.self = $$Nav;
@@ -1357,10 +1317,10 @@ const $$Nav = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$f = "C:/Project/astro/jerecho/src/components/Nav.astro";
+const $$file$f = "C:/Project/old-github/co0kie.github.io/src/components/Nav.astro";
 const $$url$f = undefined;
 
-const $$module2$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module2$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   $$metadata: $$metadata$f,
   default: $$Nav,
@@ -1368,8 +1328,8 @@ const $$module2$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
   url: $$url$f
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$e = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/Header.astro", { modules: [{ module: $$module2$4, specifier: "./Nav.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$e = createAstro("/@fs/C:/Project/astro/jerecho/src/components/Header.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$e = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Header.astro", { modules: [{ module: $$module2$5, specifier: "./Nav.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$e = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Header.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$Header = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$e, $$props, $$slots);
   Astro2.self = $$Header;
@@ -1383,10 +1343,10 @@ const $$Header = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$e = "C:/Project/astro/jerecho/src/components/Header.astro";
+const $$file$e = "C:/Project/old-github/co0kie.github.io/src/components/Header.astro";
 const $$url$e = undefined;
 
-const $$module3$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module2$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   $$metadata: $$metadata$e,
   default: $$Header,
@@ -1394,29 +1354,22 @@ const $$module3$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
   url: $$url$e
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$d = createMetadata("/@fs/C:/Project/astro/jerecho/src/layouts/Splash.astro", { modules: [{ module: $$module1$7, specifier: "../components/Footer.astro", assert: {} }, { module: $$module1$6, specifier: "../components/MetaHead.astro", assert: {} }, { module: $$module3$1, specifier: "../components/Header.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$d = createAstro("/@fs/C:/Project/astro/jerecho/src/layouts/Splash.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+var __freeze$1 = Object.freeze;
+var __defProp$1 = Object.defineProperty;
+var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { value: __freeze$1(raw || cooked.slice()) }));
+var _a$1;
+const $$metadata$d = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/layouts/Splash.astro", { modules: [{ module: $$module1$6, specifier: "../components/MetaHead.astro", assert: {} }, { module: $$module2$4, specifier: "../components/Header.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$d = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/layouts/Splash.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$Splash = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$d, $$props, $$slots);
   Astro2.self = $$Splash;
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`<html lang="en" class="astro-OSETKEJJ">
-  <head>
-    ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Web Developer and designer", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines", "class": "astro-OSETKEJJ" })}
-    
-  ${renderHead($$result)}</head>
-  <body class="blur astro-OSETKEJJ">
-    <div class="container-grid astro-OSETKEJJ">
-      ${renderComponent($$result, "Header", $$Header, { "class": "astro-OSETKEJJ" })}
-      ${renderSlot($$result, $$slots["default"])}
-      ${renderComponent($$result, "Footer", $$Footer, { "class": "astro-OSETKEJJ" })}
-    </div>
-  </body></html>`;
+  return renderTemplate(_a$1 || (_a$1 = __template$1(['<html lang="en" class="astro-ZYESPRTC">\n  <head>\n    ', "\n    \n  ", '</head>\n  <body class="astro-ZYESPRTC">\n    <div class="container-grid blur anim astro-ZYESPRTC">\n      ', "\n      ", '\n      <script defer>\n        const animClass = document.querySelector(".anim");\n        window.addEventListener("load", function () {\n          if (animClass.classList.contains("blur"))\n            animClass.classList.remove("blur");\n        });\n        // window.onbeforeunload = function () {\n        //   animClass.classList.add("blur");\n        // };\n      <\/script>\n    </div>\n  </body>\n</html>'])), renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Web Developer and designer", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines", "class": "astro-ZYESPRTC" }), renderHead($$result), renderComponent($$result, "Header", $$Header, { "class": "astro-ZYESPRTC" }), renderSlot($$result, $$slots["default"]));
 });
 
-const $$file$d = "C:/Project/astro/jerecho/src/layouts/Splash.astro";
+const $$file$d = "C:/Project/old-github/co0kie.github.io/src/layouts/Splash.astro";
 const $$url$d = undefined;
 
 const $$module1$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1430,7 +1383,7 @@ const $$module1$5 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
 const html$1 = "";
 
 				const frontmatter$1 = {"title":"Hi, my name is","name":"Jech","slogan":"Web Developer","description":"I’m a seasoned web developer with agile methodology background and over 10 years industry experience."};
-				const file$1 = "C:/Project/astro/jerecho/src/pages/home/intro.md";
+				const file$1 = "C:/Project/old-github/co0kie.github.io/src/pages/home/intro.md";
 				const url$1 = "/home/intro";
 				function rawContent$1() {
 					return "";
@@ -1482,8 +1435,8 @@ const _page1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   default: Content$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$c = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/Link.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$c = createAstro("/@fs/C:/Project/astro/jerecho/src/components/Link.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$c = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Link.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$c = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Link.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$Link = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$c, $$props, $$slots);
   Astro2.self = $$Link;
@@ -1517,7 +1470,7 @@ const $$Link = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$c = "C:/Project/astro/jerecho/src/components/Link.astro";
+const $$file$c = "C:/Project/old-github/co0kie.github.io/src/components/Link.astro";
 const $$url$c = undefined;
 
 const $$module2$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1528,8 +1481,8 @@ const $$module2$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
   url: $$url$c
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$b = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/SocialList.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$b = createAstro("/@fs/C:/Project/astro/jerecho/src/components/SocialList.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$b = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/SocialList.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$b = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/SocialList.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$SocialList = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$b, $$props, $$slots);
   Astro2.self = $$SocialList;
@@ -1547,7 +1500,7 @@ const $$SocialList = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$b = "C:/Project/astro/jerecho/src/components/SocialList.astro";
+const $$file$b = "C:/Project/old-github/co0kie.github.io/src/components/SocialList.astro";
 const $$url$b = undefined;
 
 const $$module1$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1558,8 +1511,8 @@ const $$module1$4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
   url: $$url$b
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$a = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/SocialMedia.astro", { modules: [{ module: $$module1$4, specifier: "./SocialList.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$a = createAstro("/@fs/C:/Project/astro/jerecho/src/components/SocialMedia.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$a = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/SocialMedia.astro", { modules: [{ module: $$module1$4, specifier: "./SocialList.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$a = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/SocialMedia.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$SocialMedia = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$a, $$props, $$slots);
   Astro2.self = $$SocialMedia;
@@ -1619,7 +1572,7 @@ const $$SocialMedia = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$a = "C:/Project/astro/jerecho/src/components/SocialMedia.astro";
+const $$file$a = "C:/Project/old-github/co0kie.github.io/src/components/SocialMedia.astro";
 const $$url$a = undefined;
 
 const $$module3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1630,8 +1583,8 @@ const $$module3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
   url: $$url$a
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$9 = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/Intro.astro", { modules: [{ module: _page1, specifier: "../pages/home/intro.md", assert: {} }, { module: $$module2$3, specifier: "./Link.astro", assert: {} }, { module: $$module3, specifier: "./SocialMedia.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$9 = createAstro("/@fs/C:/Project/astro/jerecho/src/components/Intro.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$9 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Intro.astro", { modules: [{ module: _page1, specifier: "../pages/home/intro.md", assert: {} }, { module: $$module2$3, specifier: "./Link.astro", assert: {} }, { module: $$module3, specifier: "./SocialMedia.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$9 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Intro.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$Intro = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$9, $$props, $$slots);
   Astro2.self = $$Intro;
@@ -1660,7 +1613,7 @@ const $$Intro = createComponent(async ($$result, $$props, $$slots) => {
 `;
 });
 
-const $$file$9 = "C:/Project/astro/jerecho/src/components/Intro.astro";
+const $$file$9 = "C:/Project/old-github/co0kie.github.io/src/components/Intro.astro";
 const $$url$9 = undefined;
 
 const $$module1$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1671,13 +1624,95 @@ const $$module1$3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.definePropert
   url: $$url$9
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const html = "<img src=\"assets/dots.svg\" width=\"525\">";
+const $$metadata$8 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Me.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$8 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/Me.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
+const $$Me = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
+  Astro2.self = $$Me;
+  const me = "assets/me.svg";
+  const mepng = "assets/me.png";
+  const STYLES = [];
+  for (const STYLE of STYLES)
+    $$result.styles.add(STYLE);
+  return renderTemplate`${maybeRenderHead($$result)}<div class="me-image astro-O25OHJHI">
+  <img${addAttribute(me, "src")} alt="Me" class="me astro-O25OHJHI" loading="lazy" width="317">
+  <img${addAttribute(mepng, "src")} alt="Jech" class="me-png astro-O25OHJHI" loading="lazy" width="317">
+</div>
 
-				const frontmatter = {"me":"assets/me.svg"};
-				const file = "C:/Project/astro/jerecho/src/pages/home/me.md";
-				const url = "/home/me";
+`;
+});
+
+const $$file$8 = "C:/Project/old-github/co0kie.github.io/src/components/Me.astro";
+const $$url$8 = undefined;
+
+const $$module2$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  $$metadata: $$metadata$8,
+  default: $$Me,
+  file: $$file$8,
+  url: $$url$8
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$metadata$7 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/TopFold.astro", { modules: [{ module: $$module1$3, specifier: "../components/Intro.astro", assert: {} }, { module: $$module2$2, specifier: "./Me.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$7 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/TopFold.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
+const $$TopFold = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
+  Astro2.self = $$TopFold;
+  const STYLES = [];
+  for (const STYLE of STYLES)
+    $$result.styles.add(STYLE);
+  return renderTemplate`${maybeRenderHead($$result)}<section class="top-fold astro-2SJA6AAV">
+  ${renderComponent($$result, "Intro", $$Intro, { "class": "astro-2SJA6AAV" })}
+  ${renderComponent($$result, "Me", $$Me, { "class": "astro-2SJA6AAV" })}
+</section>
+
+`;
+});
+
+const $$file$7 = "C:/Project/old-github/co0kie.github.io/src/components/TopFold.astro";
+const $$url$7 = undefined;
+
+const $$module1$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  $$metadata: $$metadata$7,
+  default: $$TopFold,
+  file: $$file$7,
+  url: $$url$7
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const $$metadata$6 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/MainContainer.astro", { modules: [{ module: $$module1$2, specifier: "./TopFold.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$6 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/MainContainer.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
+const $$MainContainer = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
+  Astro2.self = $$MainContainer;
+  const STYLES = [];
+  for (const STYLE of STYLES)
+    $$result.styles.add(STYLE);
+  return renderTemplate`${maybeRenderHead($$result)}<main class="main-container astro-LNECDEXJ">
+  ${renderComponent($$result, "TopFold", $$TopFold, { "class": "astro-LNECDEXJ" })}
+</main>
+
+`;
+});
+
+const $$file$6 = "C:/Project/old-github/co0kie.github.io/src/components/MainContainer.astro";
+const $$url$6 = undefined;
+
+const $$module2$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  $$metadata: $$metadata$6,
+  default: $$MainContainer,
+  file: $$file$6,
+  url: $$url$6
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const html = "";
+
+				const frontmatter = {"title":"Featured project.","description":"Some of the recent projects I've worked with.","description2":"Most of my contributions were mainly focused on UI / UX development, responsive web design and CMS driven websites."};
+				const file = "C:/Project/old-github/co0kie.github.io/src/pages/home/work.md";
+				const url = "/home/work";
 				function rawContent() {
-					return "<img src=\"assets/dots.svg\" width=\"525\">";
+					return "";
 				}
 				function compiledContent() {
 					return html;
@@ -1726,150 +1761,110 @@ const _page2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   default: Content
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$8 = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/Me.astro", { modules: [{ module: _page2, specifier: "../pages/home/me.md", assert: {} }, { module: _page2, specifier: "../pages/home/me.md", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$8 = createAstro("/@fs/C:/Project/astro/jerecho/src/components/Me.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
-const $$Me = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$8, $$props, $$slots);
-  Astro2.self = $$Me;
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<div class="me-image astro-CAQ6UA63">
-  <img${addAttribute(frontmatter.me, "src")} alt="" class="me astro-CAQ6UA63" loading="lazy" width="317">
-  ${renderComponent($$result, "Me", Content, { "class": "astro-CAQ6UA63" })}
-</div>
-
-`;
-});
-
-const $$file$8 = "C:/Project/astro/jerecho/src/components/Me.astro";
-const $$url$8 = undefined;
-
-const $$module2$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  $$metadata: $$metadata$8,
-  default: $$Me,
-  file: $$file$8,
-  url: $$url$8
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const $$metadata$7 = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/TopFold.astro", { modules: [{ module: $$module1$3, specifier: "../components/Intro.astro", assert: {} }, { module: $$module2$2, specifier: "./Me.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$7 = createAstro("/@fs/C:/Project/astro/jerecho/src/components/TopFold.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
-const $$TopFold = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$7, $$props, $$slots);
-  Astro2.self = $$TopFold;
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<div class="top-fold astro-UZNU7MGG">
-  <!-- <Coconut /> -->
-  ${renderComponent($$result, "Intro", $$Intro, { "class": "astro-UZNU7MGG" })}
-  ${renderComponent($$result, "Me", $$Me, { "class": "astro-UZNU7MGG" })}
-  <!-- <WaterEffects /> -->
-</div>
-
-`;
-});
-
-const $$file$7 = "C:/Project/astro/jerecho/src/components/TopFold.astro";
-const $$url$7 = undefined;
-
-const $$module1$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  $$metadata: $$metadata$7,
-  default: $$TopFold,
-  file: $$file$7,
-  url: $$url$7
-}, Symbol.toStringTag, { value: 'Module' }));
-
-var __freeze$1 = Object.freeze;
-var __defProp$1 = Object.defineProperty;
-var __template$1 = (cooked, raw) => __freeze$1(__defProp$1(cooked, "raw", { value: __freeze$1(raw || cooked.slice()) }));
-var _a$1;
-const $$metadata$6 = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/MainContainer.astro", { modules: [{ module: $$module1$2, specifier: "./TopFold.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$6 = createAstro("/@fs/C:/Project/astro/jerecho/src/components/MainContainer.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
-const $$MainContainer = createComponent(async ($$result, $$props, $$slots) => {
-  const Astro2 = $$result.createAstro($$Astro$6, $$props, $$slots);
-  Astro2.self = $$MainContainer;
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate(_a$1 || (_a$1 = __template$1(["", '<main class="main-container astro-YKXOXMTJ">\n  ', '\n</main>\n\n\n\n<script defer>\n  window.addEventListener("load", function () {\n    document.body.classList.remove("blur");\n  });\n  window.onbeforeunload = function () {\n    document.body.classList.add("blur");\n  };\n<\/script>'])), maybeRenderHead($$result), renderComponent($$result, "TopFold", $$TopFold, { "class": "astro-YKXOXMTJ" }));
-});
-
-const $$file$6 = "C:/Project/astro/jerecho/src/components/MainContainer.astro";
-const $$url$6 = undefined;
-
-const $$module2$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  $$metadata: $$metadata$6,
-  default: $$MainContainer,
-  file: $$file$6,
-  url: $$url$6
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const $$metadata$5 = createMetadata("/@fs/C:/Project/astro/jerecho/src/pages/index.astro", { modules: [{ module: $$module1$5, specifier: "../layouts/Splash.astro", assert: {} }, { module: $$module2$1, specifier: "../components/MainContainer.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$5 = createAstro("/@fs/C:/Project/astro/jerecho/src/pages/index.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
-const $$Index = createComponent(async ($$result, $$props, $$slots) => {
+const $$metadata$5 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/WorkList.astro", { modules: [{ module: _page2, specifier: "../pages/home/work.md", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$5 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/WorkList.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
+const $$WorkList = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
-  Astro2.self = $$Index;
-  return renderTemplate`${renderComponent($$result, "Splash", $$Splash, {}, { "default": () => renderTemplate`${renderComponent($$result, "Main", $$MainContainer, {})}` })}`;
+  Astro2.self = $$WorkList;
+  const workList = [
+    {
+      title: "Arcanys",
+      imgSrc: "assets/arcanys.png",
+      link: "https://arcanys.com"
+    },
+    {
+      title: "BloomLocal",
+      imgSrc: "assets/bloomlocal.png",
+      link: "https://www.bloomlocal.co.uk"
+    },
+    {
+      title: "RegisterNow",
+      imgSrc: "assets/registernow.png",
+      link: "https://registernow.io"
+    },
+    {
+      title: "RateMyAgent",
+      imgSrc: "assets/propertybanter.png",
+      link: "https://www.propertybanter.com.au"
+    },
+    {
+      title: "Arcanys Early Learning Foundation",
+      imgSrc: "assets/elearning.png",
+      link: "https://www.arcanysfoundation.org"
+    },
+    {
+      title: "FloristMart",
+      imgSrc: "assets/floristmart.png",
+      link: "https://find.florismart.com/en/"
+    }
+  ];
+  const STYLES = [];
+  for (const STYLE of STYLES)
+    $$result.styles.add(STYLE);
+  return renderTemplate`${maybeRenderHead($$result)}<div class="work-list astro-GVCB7HYD">
+  <div class="heading-panel astro-GVCB7HYD">
+    <h5 style="--shade: var(--c-gray);" class="astro-GVCB7HYD">${frontmatter.title}</h5>
+    <p class="astro-GVCB7HYD">${frontmatter.description}</p>
+    <p class="astro-GVCB7HYD">${frontmatter.description2}</p>
+  </div>
+  <ul class="astro-GVCB7HYD">
+    ${workList.map((item) => renderTemplate`<li class="astro-GVCB7HYD">
+          <a${addAttribute(item.link, "href")}${addAttribute(item.title, "title")}${addAttribute(item.title, "data-title")} target="_blank" class="astro-GVCB7HYD">
+            <img${addAttribute(item.imgSrc, "src")}${addAttribute(item.title, "alt")} class="astro-GVCB7HYD">
+          </a>
+        </li>`)}
+  </ul>
+</div>
+
+`;
 });
 
-const $$file$5 = "C:/Project/astro/jerecho/src/pages/index.astro";
-const $$url$5 = "";
+const $$file$5 = "C:/Project/old-github/co0kie.github.io/src/components/WorkList.astro";
+const $$url$5 = undefined;
 
-const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const $$module1$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   $$metadata: $$metadata$5,
-  default: $$Index,
+  default: $$WorkList,
   file: $$file$5,
   url: $$url$5
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$4 = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/WorkList.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$4 = createAstro("/@fs/C:/Project/astro/jerecho/src/components/WorkList.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
-const $$WorkList = createComponent(async ($$result, $$props, $$slots) => {
+const $$metadata$4 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/pages/index.astro", { modules: [{ module: $$module1$5, specifier: "../layouts/Splash.astro", assert: {} }, { module: $$module2$1, specifier: "../components/MainContainer.astro", assert: {} }, { module: $$module1$1, specifier: "../components/WorkList.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$4 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/pages/index.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
+const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$4, $$props, $$slots);
-  Astro2.self = $$WorkList;
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<div class="top-fold astro-APZ7OAUI">
-  <p class="astro-APZ7OAUI">test</p>
-  <!-- <Coconut /> -->
-</div>
-
-`;
+  Astro2.self = $$Index;
+  return renderTemplate`${renderComponent($$result, "Splash", $$Splash, {}, { "default": () => renderTemplate`${renderComponent($$result, "Main", $$MainContainer, {})}` })}`;
 });
 
-const $$file$4 = "C:/Project/astro/jerecho/src/components/WorkList.astro";
-const $$url$4 = undefined;
+const $$file$4 = "C:/Project/old-github/co0kie.github.io/src/pages/index.astro";
+const $$url$4 = "";
 
-const $$module1$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+const _page0 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   __proto__: null,
   $$metadata: $$metadata$4,
-  default: $$WorkList,
+  default: $$Index,
   file: $$file$4,
   url: $$url$4
 }, Symbol.toStringTag, { value: 'Module' }));
 
-var __freeze = Object.freeze;
-var __defProp = Object.defineProperty;
-var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
-var _a;
-const $$metadata$3 = createMetadata("/@fs/C:/Project/astro/jerecho/src/components/PortfolioContainer.astro", { modules: [{ module: $$module1$1, specifier: "./WorkList.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$3 = createAstro("/@fs/C:/Project/astro/jerecho/src/components/PortfolioContainer.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$3 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/components/PortfolioContainer.astro", { modules: [{ module: $$module1$1, specifier: "./WorkList.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$3 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/components/PortfolioContainer.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$PortfolioContainer = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$3, $$props, $$slots);
   Astro2.self = $$PortfolioContainer;
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate(_a || (_a = __template(["", '<main class="main-container astro-R3ALXACM">\n  ', '\n</main>\n\n\n\n<script defer>\n  window.addEventListener("load", function () {\n    document.body.classList.remove("blur");\n  });\n<\/script>'])), maybeRenderHead($$result), renderComponent($$result, "WorkList", $$WorkList, { "class": "astro-R3ALXACM" }));
+  return renderTemplate`${maybeRenderHead($$result)}<main class="main-container astro-J2YX3WLR">
+  ${renderComponent($$result, "WorkList", $$WorkList, { "class": "astro-J2YX3WLR" })}
+</main>
+
+`;
 });
 
-const $$file$3 = "C:/Project/astro/jerecho/src/components/PortfolioContainer.astro";
+const $$file$3 = "C:/Project/old-github/co0kie.github.io/src/components/PortfolioContainer.astro";
 const $$url$3 = undefined;
 
 const $$module1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1880,29 +1875,22 @@ const $$module1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
   url: $$url$3
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$2 = createMetadata("/@fs/C:/Project/astro/jerecho/src/layouts/Experience.astro", { modules: [{ module: $$module1$7, specifier: "../components/Footer.astro", assert: {} }, { module: $$module1$6, specifier: "../components/MetaHead.astro", assert: {} }, { module: $$module3$1, specifier: "../components/Header.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$2 = createAstro("/@fs/C:/Project/astro/jerecho/src/layouts/Experience.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+var __freeze = Object.freeze;
+var __defProp = Object.defineProperty;
+var __template = (cooked, raw) => __freeze(__defProp(cooked, "raw", { value: __freeze(raw || cooked.slice()) }));
+var _a;
+const $$metadata$2 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/layouts/Experience.astro", { modules: [{ module: $$module1$6, specifier: "../components/MetaHead.astro", assert: {} }, { module: $$module2$4, specifier: "../components/Header.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$2 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/layouts/Experience.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$Experience = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Experience;
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`<html lang="en" class="astro-2GNULTYC">
-  <head>
-    ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Portfolio", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines", "class": "astro-2GNULTYC" })}
-    
-  ${renderHead($$result)}</head>
-  <body class="blur astro-2GNULTYC">
-    <div class="container-grid astro-2GNULTYC">
-      ${renderComponent($$result, "Header", $$Header, { "class": "astro-2GNULTYC" })}
-      ${renderSlot($$result, $$slots["default"])}
-      ${renderComponent($$result, "Footer", $$Footer, { "footerClass": "footer footer-work", "class": "astro-2GNULTYC" })}
-    </div>
-  </body></html>`;
+  return renderTemplate(_a || (_a = __template(['<html lang="en" class="astro-3FD23V5V">\n  <head>\n    ', "\n    \n  ", '</head>\n  <body class="astro-3FD23V5V">\n    <div class="container-grid blur anim astro-3FD23V5V">\n      ', "\n      ", '\n      <script defer>\n        const animClass = document.querySelector(".anim");\n        window.addEventListener("load", function () {\n          animClass.classList.remove("blur");\n        });\n        // window.onbeforeunload = function () {\n        //   animClass.classList.add("blur");\n        // };\n      <\/script>\n    </div>\n  </body>\n</html>'])), renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Portfolio", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines", "class": "astro-3FD23V5V" }), renderHead($$result), renderComponent($$result, "Header", $$Header, { "class": "astro-3FD23V5V" }), renderSlot($$result, $$slots["default"]));
 });
 
-const $$file$2 = "C:/Project/astro/jerecho/src/layouts/Experience.astro";
+const $$file$2 = "C:/Project/old-github/co0kie.github.io/src/layouts/Experience.astro";
 const $$url$2 = undefined;
 
 const $$module2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1913,15 +1901,15 @@ const $$module2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty(
   url: $$url$2
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata$1 = createMetadata("/@fs/C:/Project/astro/jerecho/src/pages/work.astro", { modules: [{ module: $$module1, specifier: "../components/PortfolioContainer.astro", assert: {} }, { module: $$module2, specifier: "../layouts/Experience.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$1 = createAstro("/@fs/C:/Project/astro/jerecho/src/pages/work.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata$1 = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/pages/work.astro", { modules: [{ module: $$module1, specifier: "../components/PortfolioContainer.astro", assert: {} }, { module: $$module2, specifier: "../layouts/Experience.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro$1 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/pages/work.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$Work = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$Work;
   return renderTemplate`${renderComponent($$result, "Experience", $$Experience, {}, { "default": () => renderTemplate`${renderComponent($$result, "PortfolioContainer", $$PortfolioContainer, {})}` })}`;
 });
 
-const $$file$1 = "C:/Project/astro/jerecho/src/pages/work.astro";
+const $$file$1 = "C:/Project/old-github/co0kie.github.io/src/pages/work.astro";
 const $$url$1 = "/work";
 
 const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1932,8 +1920,8 @@ const _page3 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   url: $$url$1
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const $$metadata = createMetadata("/@fs/C:/Project/astro/jerecho/src/pages/404.astro", { modules: [{ module: $$module1$6, specifier: "../components/MetaHead.astro", assert: {} }, { module: $$module2$4, specifier: "../components/Nav.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro = createAstro("/@fs/C:/Project/astro/jerecho/src/pages/404.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/astro/jerecho/");
+const $$metadata = createMetadata("/@fs/C:/Project/old-github/co0kie.github.io/src/pages/404.astro", { modules: [{ module: $$module1$6, specifier: "../components/MetaHead.astro", assert: {} }, { module: $$module2$5, specifier: "../components/Nav.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
+const $$Astro = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/pages/404.astro", "https://j3rech0.netlify.app/", "file:///C:/Project/old-github/co0kie.github.io/");
 const $$404 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$404;
@@ -1955,7 +1943,7 @@ const $$404 = createComponent(async ($$result, $$props, $$slots) => {
   </body></html>`;
 });
 
-const $$file = "C:/Project/astro/jerecho/src/pages/404.astro";
+const $$file = "C:/Project/old-github/co0kie.github.io/src/pages/404.astro";
 const $$url = "/404";
 
 const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
@@ -1966,7 +1954,7 @@ const _page4 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
   url: $$url
 }, Symbol.toStringTag, { value: 'Module' }));
 
-const pageMap = new Map([['src/pages/index.astro', _page0],['src/pages/home/intro.md', _page1],['src/pages/home/me.md', _page2],['src/pages/work.astro', _page3],['src/pages/404.astro', _page4],]);
+const pageMap = new Map([['src/pages/index.astro', _page0],['src/pages/home/intro.md', _page1],['src/pages/home/work.md', _page2],['src/pages/work.astro', _page3],['src/pages/404.astro', _page4],]);
 const renderers = [Object.assign({"name":"astro:jsx","serverEntrypoint":"astro/jsx/server.js","jsxImportSource":"astro"}, { ssr: server_default }),];
 
 if (typeof process !== "undefined") {
@@ -2038,7 +2026,7 @@ function deserializeManifest(serializedManifest) {
   };
 }
 
-const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/404-index-work.3590d5a2.css","assets/index-work.bf6abf16.css","assets/index.69995dcd.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/intro","type":"page","pattern":"^\\/home\\/intro\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"intro","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/intro.md","pathname":"/home/intro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/me","type":"page","pattern":"^\\/home\\/me\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"me","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/me.md","pathname":"/home/me","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/work.bf6fc389.css","assets/404-index-work.3590d5a2.css","assets/index-work.bf6abf16.css"],"scripts":[],"routeData":{"route":"/work","type":"page","pattern":"^\\/work\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work.astro","pathname":"/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/404.d05432fa.css","assets/404-index-work.3590d5a2.css"],"scripts":[],"routeData":{"route":"/404","type":"page","pattern":"^\\/404\\/?$","segments":[[{"content":"404","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/404.astro","pathname":"/404","_meta":{"trailingSlash":"ignore"}}}],"site":"https://j3rech0.netlify.app/","base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","astro:scripts/before-hydration.js":""},"assets":["/assets/404.d05432fa.css","/assets/404-index-work.3590d5a2.css","/assets/index.69995dcd.css","/assets/index-work.bf6abf16.css","/assets/work.bf6fc389.css","/robots.txt","/assets/circle-stroke.svg","/assets/coconut.svg","/assets/codepen.svg","/assets/cta-arrow.svg","/assets/dots.svg","/assets/dribbble.svg","/assets/fake_cursor.svg","/assets/fav.svg","/assets/footer-dots.svg","/assets/logo-stroke.svg","/assets/me.png","/assets/me.svg","/assets/mountains.svg","/assets/ocean.svg","/assets/og-cover.png","/assets/stroke-bg.svg","/assets/youtube.svg"]}), {
+const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/404-index-work.87900f64.css","assets/index-work.87fcc201.css","assets/index.8da67af5.css"],"scripts":[],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/intro","type":"page","pattern":"^\\/home\\/intro\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"intro","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/intro.md","pathname":"/home/intro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/work","type":"page","pattern":"^\\/home\\/work\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/work.md","pathname":"/home/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/index-work.87fcc201.css","assets/work.212b4390.css","assets/404-index-work.87900f64.css"],"scripts":[],"routeData":{"route":"/work","type":"page","pattern":"^\\/work\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work.astro","pathname":"/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/404.d05432fa.css","assets/404-index-work.87900f64.css"],"scripts":[],"routeData":{"route":"/404","type":"page","pattern":"^\\/404\\/?$","segments":[[{"content":"404","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/404.astro","pathname":"/404","_meta":{"trailingSlash":"ignore"}}}],"site":"https://j3rech0.netlify.app/","base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","astro:scripts/before-hydration.js":""},"assets":["/assets/404.d05432fa.css","/assets/404-index-work.87900f64.css","/assets/index.8da67af5.css","/assets/index-work.87fcc201.css","/assets/work.212b4390.css","/favicon.ico","/robots.txt","/assets/arcanys.png","/assets/bloomlocal.png","/assets/circle-stroke.svg","/assets/coconut.svg","/assets/codepen.svg","/assets/cta-arrow.svg","/assets/dots.svg","/assets/dribbble.svg","/assets/elearning.png","/assets/fake_cursor.svg","/assets/fav.svg","/assets/floristmart.png","/assets/footer-dots.svg","/assets/logo-stroke.svg","/assets/me.png","/assets/me.svg","/assets/mountains.svg","/assets/ocean.svg","/assets/og-cover.png","/assets/propertybanter.png","/assets/registernow.png","/assets/stroke-bg.svg","/assets/youtube.svg"]}), {
 	pageMap: pageMap,
 	renderers: renderers
 });
