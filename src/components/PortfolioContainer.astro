@@ -1,0 +1,19 @@
+---
+import WorkList from "./WorkList.astro";
+---
+
+<main class="main-container">
+  <WorkList />
+</main>
+
+<style lang="scss">
+  @import "../styles/mixin.scss";
+  .main-container {
+    margin-inline: auto;
+    margin-block: auto;
+    @include bp(1200) {
+      margin-right: -2rem;
+      margin-left: -2rem;
+    }
+  }
+</style>

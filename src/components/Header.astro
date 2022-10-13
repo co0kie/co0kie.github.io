@@ -1,0 +1,17 @@
+---
+import Nav from "./Nav.astro";
+---
+
+<header>
+  <Nav />
+</header>
+
+<style lang="scss">
+  @import "../styles/mixin.scss";
+  header {
+    max-width: var(--w-full);
+    width: 100%;
+    margin-inline: auto;
+    height: fit-content;
+  }
+</style>

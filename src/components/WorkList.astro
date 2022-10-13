@@ -1,0 +1,151 @@
+---
+import * as work from "../pages/home/work.md";
+const workList = [
+  {
+    title: "Arcanys",
+    imgSrc: "assets/arcanys.png",
+    link: "https://arcanys.com",
+  },
+  {
+    title: "BloomLocal",
+    imgSrc: "assets/bloomlocal.png",
+    link: "https://www.bloomlocal.co.uk",
+  },
+  {
+    title: "RegisterNow",
+    imgSrc: "assets/registernow.png",
+    link: "https://registernow.io",
+  },
+  {
+    title: "RateMyAgent",
+    imgSrc: "assets/propertybanter.png",
+    link: "https://www.propertybanter.com.au",
+  },
+  {
+    title: "Arcanys Early Learning Foundation",
+    imgSrc: "assets/elearning.png",
+    link: "https://www.arcanysfoundation.org",
+  },
+  {
+    title: "FloristMart",
+    imgSrc: "assets/floristmart.png",
+    link: "https://find.florismart.com/en/",
+  },
+];
+---
+
+<div class="work-list">
+  <div class="heading-panel">
+    <h5 style="--shade: var(--c-gray);">{work.frontmatter.title}</h5>
+    <p>{work.frontmatter.description}</p>
+    <p>{work.frontmatter.description2}</p>
+  </div>
+  <ul>
+    {
+      workList.map((item) => (
+        <li>
+          <a
+            href={item.link}
+            title={item.title}
+            data-title={item.title}
+            target="_blank"
+          >
+            <img src={item.imgSrc} alt={item.title} />
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style lang="scss">
+  @import "../styles/mixin.scss";
+  .work-list {
+    margin-block: rem(50);
+    ul {
+      margin-top: rem(50);
+      display: flex;
+      flex-flow: row wrap;
+      column-gap: 4rem;
+      row-gap: 4rem;
+      max-width: rem(940);
+      img {
+        display: block;
+      }
+      a {
+        position: relative;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+        }
+        &::before {
+          width: 100%;
+          height: 100%;
+          background: rgba(var(--c-black-gradient-1), 0.7);
+        }
+        &::after {
+          content: attr(data-title);
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          height: fit-content;
+          width: fit-content;
+          transition: 300ms;
+          font-size: rem(22);
+          filter: blur(5px) opacity(0);
+        }
+        &:hover{
+          &::after{
+            filter: blur(0) opacity(1);
+          }
+        }
+      }
+      @include bp(768) {
+        li {
+          width: 45%;
+        }
+      }
+    }
+    @include bp(500) {
+      margin-inline: auto;
+      max-width: rem(1040);
+    }
+    @include bp(1024) {
+      padding-bottom: rem(20);
+      padding-inline: rem(30);
+    }
+    @include bp(1200) {
+      padding-top: rem(70);
+    }
+  }
+  .heading-panel {
+    max-width: rem(800);
+    > h5 {
+      opacity: var(--opacity);
+      font-size: rem(20);
+      font-weight: 600;
+      margin-bottom: rem(20);
+      color: var(--c-white);
+      font-weight: 400;
+      font-family: var(--f-roboto-mono);
+      width: fit-content;
+      padding: rem(10) rem(20);
+      position: relative;
+      background-image: linear-gradient(
+        var(--shade, --defaultShadeColor),
+        var(--shade, --defaultShadeColor)
+      );
+      background-size: 70% rem(20);
+      background-repeat: no-repeat;
+      background-position: 0 calc(rem(20) / 5);
+    }
+    > p {
+      color: var(--c-gray-400);
+      font-size: rem(18);
+      line-height: 1.6;
+    }
+  }
+</style>
