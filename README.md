@@ -10,6 +10,7 @@ In progress website code using Astro, will definitely update in the future.
 | `npm run preview`      | Preview your build locally, before deploying     |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
+| `npm build && netlify deploy --prod` | CI/CD                              |
 
 ## 👀 Want to learn more?
 
