@@ -19,8 +19,8 @@
     }
   }
 </style>
-
-<script defer>
+<script type="module" src="/app.js"></script>
+<!-- <script defer>
   window.onload = () => {
     const anchors = document.querySelectorAll("a");
     const transition_el = document.querySelector(".anim");
@@ -35,14 +35,17 @@
       anchor.addEventListener("click", (e) => {
         e.preventDefault();
         let target = e.target;
-        if (!target.classList.contains("animTrigger")) return;
 
-        transition_el.classList.add("blur");
+        if (target.classList.contains("animTrigger")) {
+          transition_el.classList.add("blur");
 
-        setInterval(() => {
+          setInterval(() => {
+            window.location.href = target;
+          }, 500);
+        } else {
           window.location.href = target;
-        }, 500);
+        }
       });
     }
   };
-</script>
+</script> -->
