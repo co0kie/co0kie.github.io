@@ -29,6 +29,7 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
             href={post.url}
             title={post.frontmatter.title}
             data-title={post.frontmatter.title}
+            class="animTrigger"
           >
             <img src={post.frontmatter.imgSrc} alt={post.frontmatter.title} />
           </a>

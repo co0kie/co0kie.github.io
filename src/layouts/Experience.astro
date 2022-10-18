@@ -30,12 +30,6 @@ import Footer from "../components/Footer.astro";
       <Header />
       <slot />
       <Footer />
-      <script defer>
-        const animClass = document.querySelector(".anim");
-        window.addEventListener("load", function () {
-          animClass.classList.remove("blur");
-        });
-      </script>
     </div>
   </body>
 </html>
