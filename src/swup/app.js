@@ -17,6 +17,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 300);
 });
 
-document.addEventListener("swup:contentReplaced", (e) => {
-  console.log(e);
-});

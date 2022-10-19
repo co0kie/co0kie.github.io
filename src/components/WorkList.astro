@@ -16,20 +16,25 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
 ---
 
 <div class="work-list">
-  <div class="heading-panel" style="animation-delay: 300ms">
+  <div
+    class="heading-panel swup-delay-anim"
+    style="animation-delay: var(--delay100)"
+  >
     <h5 style="--shade: var(--c-gray);">{work.frontmatter.title}</h5>
     <p>{work.frontmatter.description}</p>
     <p>{work.frontmatter.description2}</p>
   </div>
   <ul>
     {
-      posts.map((post) => (
-        <li>
+      posts.map((post, i) => (
+        <li
+          class="swup-delay-anim"
+          style={"animation-delay:" + (i += 3) + "00ms"}
+        >
           <a
             href={post.url}
             title={post.frontmatter.title}
             data-title={post.frontmatter.title}
-            class="animTrigger"
           >
             <img src={post.frontmatter.imgSrc} alt={post.frontmatter.title} />
           </a>
@@ -41,15 +46,7 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
 
 <style lang="scss">
   @import "../styles/mixin.scss";
-  @keyframes anim {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+
   .work-list {
     margin-block: rem(50);
     ul {
@@ -120,10 +117,8 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
     }
   }
   .heading-panel {
-    animation: anim 500ms forwards;
     max-width: rem(800);
-    opacity: 0;
-    transform: translateY(-10px);
+
     > h5 {
       opacity: var(--opacity);
       font-size: rem(20);

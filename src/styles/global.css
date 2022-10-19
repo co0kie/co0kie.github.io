@@ -120,3 +120,24 @@ html.is-changing .main-container,
 html.is-animating .transition-fade {
   opacity: 0;
 }
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.swup-delay-anim {
+  --delay100: 100ms;
+  --delay200: 200ms;
+  --delay300: 300ms;
+  --delay400: 400ms;
+  --delay500: 500ms;
+  --delay600: 600ms;
+  animation: anim 500ms forwards;
+  opacity: 0;
+  transform: translateY(-10px);
+}
