@@ -15,8 +15,7 @@ const { title, imgSrcfull, link, description, responsibilities, builtwith } =
       title="Jech | Portfolio"
       description="My name is Jech and I'm a Freelance Web Developer and designer from the Philippines"
     />
-    <style lang="scss">
-      @import "../styles/mixin.scss";
+    <style is:inline>
       .container-grid {
         display: grid;
         height: calc(100vh - var(--m-medium) * 2);
@@ -24,7 +23,9 @@ const { title, imgSrcfull, link, description, responsibilities, builtwith } =
           "header"
           "content"
           "footer";
-        @include bp(1000) {
+      }
+      @media (min-width: 1000px) {
+        .container-grid {
           grid-template-rows: 9vh 1fr 6vh;
           display: grid;
         }
@@ -33,7 +34,9 @@ const { title, imgSrcfull, link, description, responsibilities, builtwith } =
       .main-container {
         margin-inline: auto;
         margin-block: auto;
-        @include bp(1200) {
+      }
+      @media (min-width: 1200px) {
+        .main-container {
           margin-right: -2rem;
           margin-left: -2rem;
         }

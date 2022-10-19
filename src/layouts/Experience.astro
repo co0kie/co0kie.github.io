@@ -10,15 +10,16 @@ import Footer from "../components/Footer.astro";
       title="Jech | Portfolio"
       description="My name is Jech and I'm a Freelance Web Developer and designer from the Philippines"
     />
-    <style lang="scss">
-      @import "../styles/mixin.scss";
+    <style is:inline>
       .container-grid {
         display: grid;
         grid-template-areas:
           "header"
           "content"
           "footer";
-        @include bp(1000) {
+      }
+      @media (min-width: 1000px) {
+        .container-grid {
           grid-template-rows: 1fr;
           display: grid;
         }
