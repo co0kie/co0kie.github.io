@@ -7,12 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // this event runs for every page view after initial load
   setTimeout(function () {
     console.log("test2");
+    const options = { cache: true };
     new Swup({
       plugins: [
         new SwupA11yPlugin(),
         new SwupHeadPlugin(),
         new SwupSlideTheme(),
       ],
+      options,
     });
   }, 300);
 });
