@@ -16,7 +16,7 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
 ---
 
 <div class="work-list">
-  <div class="heading-panel">
+  <div class="heading-panel" style="animation-delay: 300ms">
     <h5 style="--shade: var(--c-gray);">{work.frontmatter.title}</h5>
     <p>{work.frontmatter.description}</p>
     <p>{work.frontmatter.description2}</p>
@@ -41,6 +41,14 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
 
 <style lang="scss">
   @import "../styles/mixin.scss";
+  @keyframes anim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .work-list {
     margin-block: rem(50);
     ul {
@@ -111,7 +119,9 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
     }
   }
   .heading-panel {
+    animation: anim 500ms forwards;
     max-width: rem(800);
+    opacity: 0;
     > h5 {
       opacity: var(--opacity);
       font-size: rem(20);
