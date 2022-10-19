@@ -26,10 +26,12 @@ import Footer from "../components/Footer.astro";
     </style>
   </head>
   <body>
-    <div class="container-grid">
-      <Header />
-      <slot />
-      <Footer />
+    <div class="transition-fade" id="swup">
+      <div class="container-grid">
+        <Header />
+        <slot />
+        <Footer />
+      </div>
     </div>
   </body>
 </html>
