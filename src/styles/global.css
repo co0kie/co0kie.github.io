@@ -115,7 +115,8 @@ ul {
   transition: 0.4s;
   opacity: 1;
 }
-html.is-leaving .main-container,
+html.is-rendering .main-container,
+html.is-changing .main-container,
 html.is-animating .transition-fade {
   opacity: 0;
 }

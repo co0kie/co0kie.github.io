@@ -17,9 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 300);
 });
 
-document.addEventListener("swup:contentReplaced", () => {
-const c = document.querySelector(".main-container");
-  setTimeout(function () {
-    c.style.opacity = "1";
-  }, 500);
+document.addEventListener("swup:contentReplaced", (e) => {
+  console.log(e);
 });
