@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import PortfolioDetails from "../components/PortfolioDetails.astro";
 const MainEl = "main";
-const MainClass = "main-container";
+const MainClass = "main-container transition-fade";
 const { title, imgSrcfull, link, description, responsibilities, builtwith } =
   Astro.props.frontmatter || Astro.props;
 ---
@@ -44,21 +44,19 @@ const { title, imgSrcfull, link, description, responsibilities, builtwith } =
     </style>
   </head>
   <body>
-    <div class="transition-fade" id="swup">
-      <div class="container-grid">
-        <Header />
-        <MainEl class={MainClass}>
-          <PortfolioDetails
-            {title}
-            {imgSrcfull}
-            {link}
-            {description}
-            {responsibilities}
-            {builtwith}
-          />
-        </MainEl>
-        <Footer />
-      </div>
+    <div class="container-grid">
+      <Header />
+      <MainEl class={MainClass} id="swup">
+        <PortfolioDetails
+          {title}
+          {imgSrcfull}
+          {link}
+          {description}
+          {responsibilities}
+          {builtwith}
+        />
+      </MainEl>
+      <Footer />
     </div>
   </body>
 </html>

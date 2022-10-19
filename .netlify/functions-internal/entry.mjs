@@ -1,6 +1,6 @@
 import * as adapter from '@astrojs/netlify/netlify-functions.js';
 import { escape } from 'html-escaper';
-/* empty css                        *//* empty css                           *//* empty css                           *//* empty css                           *//* empty css                           *//* empty css                       *//* empty css                      */import 'mime';
+/* empty css                           *//* empty css                           *//* empty css                        *//* empty css                           *//* empty css                           *//* empty css                       *//* empty css                      */import 'mime';
 import 'kleur/colors';
 import 'string-width';
 import 'path-browserify';
@@ -1392,21 +1392,30 @@ const $$Astro$f = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/l
 const $$Splash = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$f, $$props, $$slots);
   Astro2.self = $$Splash;
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate`<html lang="en" class="astro-5PJCX6X5">
+  return renderTemplate`<html lang="en">
   <head>
-    ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Web Developer and designer", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines", "class": "astro-5PJCX6X5" })}
-    
+    ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Web Developer and designer", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines" })}
+    <style>
+      .container-grid {
+        grid-template-areas:
+          "header"
+          "content"
+          "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 60vh calc(30vh - 4rem);
+      }
+      @media (min-width: 1000px) {
+        .container-grid {
+          display: grid;
+        }
+      }
+    </style>
   ${renderHead($$result)}</head>
-  <body class="astro-5PJCX6X5">
-    <div class="transition-fade astro-5PJCX6X5" id="swup">
-      <div class="container-grid astro-5PJCX6X5">
-        ${renderComponent($$result, "Header", $$Header, { "class": "astro-5PJCX6X5" })}
-        ${renderSlot($$result, $$slots["default"])}
-        ${renderComponent($$result, "Footer", $$Footer, { "class": "astro-5PJCX6X5" })}
-      </div>
+  <body>
+    <div class="container-grid">
+      ${renderComponent($$result, "Header", $$Header, {})}
+      ${renderSlot($$result, $$slots["default"])}
+      ${renderComponent($$result, "Footer", $$Footer, {})}
     </div>
   </body></html>`;
 });
@@ -1711,8 +1720,8 @@ const $$MainContainer = createComponent(async ($$result, $$props, $$slots) => {
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<main class="main-container astro-LNECDEXJ">
-  ${renderComponent($$result, "TopFold", $$TopFold, { "class": "astro-LNECDEXJ" })}
+  return renderTemplate`${maybeRenderHead($$result)}<main class="main-container transition-fade astro-KGJIGXIL" id="swup">
+  ${renderComponent($$result, "TopFold", $$TopFold, { "class": "astro-KGJIGXIL" })}
 </main>
 
 `;
@@ -1878,23 +1887,44 @@ const $$Work$1 = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$5, $$props, $$slots);
   Astro2.self = $$Work$1;
   const MainEl = "main";
-  const MainClass = "main-container";
+  const MainClass = "main-container transition-fade";
   const { title, imgSrcfull, link, description, responsibilities, builtwith } = Astro2.props.frontmatter || Astro2.props;
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate`<html lang="en" class="astro-NNGVQBDT">
+  return renderTemplate`<html lang="en">
   <head>
-    ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Portfolio", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines", "class": "astro-NNGVQBDT" })}
-    
+    ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Portfolio", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines" })}
+    <style>
+      .container-grid {
+        display: grid;
+        height: calc(100vh - var(--m-medium) * 2);
+        grid-template-areas:
+          "header"
+          "content"
+          "footer";
+      }
+      @media (min-width: 1000px) {
+        .container-grid {
+          grid-template-rows: 9vh 1fr 6vh;
+          display: grid;
+        }
+      }
+
+      .main-container {
+        margin-inline: auto;
+        margin-block: auto;
+      }
+      @media (min-width: 1200px) {
+        .main-container {
+          margin-right: -2rem;
+          margin-left: -2rem;
+        }
+      }
+    </style>
   ${renderHead($$result)}</head>
-  <body class="astro-NNGVQBDT">
-    <div class="transition-fade astro-NNGVQBDT" id="swup">
-      <div class="container-grid astro-NNGVQBDT">
-        ${renderComponent($$result, "Header", $$Header, { "class": "astro-NNGVQBDT" })}
-        ${renderComponent($$result, "MainEl", MainEl, { "class": MainClass + " astro-NNGVQBDT" }, { "default": () => renderTemplate`${renderComponent($$result, "PortfolioDetails", $$PortfolioDetails, { "title": title, "imgSrcfull": imgSrcfull, "link": link, "description": description, "responsibilities": responsibilities, "builtwith": builtwith, "class": "astro-NNGVQBDT" })}` })}
-        ${renderComponent($$result, "Footer", $$Footer, { "class": "astro-NNGVQBDT" })}
-      </div>
+  <body>
+    <div class="container-grid">
+      ${renderComponent($$result, "Header", $$Header, {})}
+      ${renderComponent($$result, "MainEl", MainEl, { "class": MainClass, "id": "swup" }, { "default": () => renderTemplate`${renderComponent($$result, "PortfolioDetails", $$PortfolioDetails, { "title": title, "imgSrcfull": imgSrcfull, "link": link, "description": description, "responsibilities": responsibilities, "builtwith": builtwith })}` })}
+      ${renderComponent($$result, "Footer", $$Footer, {})}
     </div>
   </body></html>`;
 });
@@ -2337,8 +2367,8 @@ const $$PortfolioContainer = createComponent(async ($$result, $$props, $$slots) 
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<main class="main-container astro-J2YX3WLR">
-  ${renderComponent($$result, "WorkList", $$WorkList, { "class": "astro-J2YX3WLR" })}
+  return renderTemplate`${maybeRenderHead($$result)}<main class="main-container transition-fade astro-SENL7HH2" id="swup">
+  ${renderComponent($$result, "WorkList", $$WorkList, { "class": "astro-SENL7HH2" })}
 </main>
 
 `;
@@ -2360,21 +2390,30 @@ const $$Astro$2 = createAstro("/@fs/C:/Project/old-github/co0kie.github.io/src/l
 const $$Experience = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
   Astro2.self = $$Experience;
-  const STYLES = [];
-  for (const STYLE of STYLES)
-    $$result.styles.add(STYLE);
-  return renderTemplate`<html lang="en" class="astro-AQJVABPO">
+  return renderTemplate`<html lang="en">
   <head>
-    ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Portfolio", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines", "class": "astro-AQJVABPO" })}
-    
+    ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Portfolio", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines" })}
+    <style>
+      .container-grid {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "content"
+          "footer";
+      }
+      @media (min-width: 1000px) {
+        .container-grid {
+          grid-template-rows: 1fr;
+          display: grid;
+        }
+      }
+    </style>
   ${renderHead($$result)}</head>
-  <body class="astro-AQJVABPO">
-    <div class="transition-fade astro-AQJVABPO" id="swup">
-      <div class="container-grid astro-AQJVABPO">
-        ${renderComponent($$result, "Header", $$Header, { "class": "astro-AQJVABPO" })}
-        ${renderSlot($$result, $$slots["default"])}
-        ${renderComponent($$result, "Footer", $$Footer, { "class": "astro-AQJVABPO" })}
-      </div>
+  <body>
+    <div class="container-grid">
+      ${renderComponent($$result, "Header", $$Header, {})}
+      ${renderSlot($$result, $$slots["default"])}
+      ${renderComponent($$result, "Footer", $$Footer, {})}
     </div>
   </body></html>`;
 });
@@ -2515,7 +2554,7 @@ function deserializeManifest(serializedManifest) {
   };
 }
 
-const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/7d2cbc10.fde9a4ed.css","assets/ba54dbed.f0c838aa.css","assets/index.5684ed37.css","assets/24de80a9.406290d0.css"],"scripts":[{"type":"external","value":"hoisted.da9ce7b5.js"}],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/intro","type":"page","pattern":"^\\/home\\/intro\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"intro","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/intro.md","pathname":"/home/intro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/work","type":"page","pattern":"^\\/home\\/work\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/work.md","pathname":"/home/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.fde9a4ed.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.c0214181.css"],"scripts":[{"type":"external","value":"hoisted.da9ce7b5.js"}],"routeData":{"route":"/work/floristmart","type":"page","pattern":"^\\/work\\/floristmart\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"floristmart","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/floristmart.md","pathname":"/work/floristmart","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.fde9a4ed.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.c0214181.css"],"scripts":[{"type":"external","value":"hoisted.da9ce7b5.js"}],"routeData":{"route":"/work/ratemyagent","type":"page","pattern":"^\\/work\\/ratemyagent\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"ratemyagent","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/ratemyagent.md","pathname":"/work/ratemyagent","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.fde9a4ed.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.c0214181.css"],"scripts":[{"type":"external","value":"hoisted.da9ce7b5.js"}],"routeData":{"route":"/work/registernow","type":"page","pattern":"^\\/work\\/registernow\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"registernow","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/registernow.md","pathname":"/work/registernow","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.fde9a4ed.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.c0214181.css"],"scripts":[{"type":"external","value":"hoisted.da9ce7b5.js"}],"routeData":{"route":"/work/bloomlocal","type":"page","pattern":"^\\/work\\/bloomlocal\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"bloomlocal","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/bloomlocal.md","pathname":"/work/bloomlocal","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.fde9a4ed.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.c0214181.css"],"scripts":[{"type":"external","value":"hoisted.da9ce7b5.js"}],"routeData":{"route":"/work/arcanys","type":"page","pattern":"^\\/work\\/arcanys\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"arcanys","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/arcanys.md","pathname":"/work/arcanys","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.fde9a4ed.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.c0214181.css"],"scripts":[{"type":"external","value":"hoisted.da9ce7b5.js"}],"routeData":{"route":"/work/aelf","type":"page","pattern":"^\\/work\\/aelf\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"aelf","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/aelf.md","pathname":"/work/aelf","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/b0310eba.c0214181.css","assets/work.3ff128d3.css","assets/7d2cbc10.fde9a4ed.css","assets/ba54dbed.f0c838aa.css"],"scripts":[{"type":"external","value":"hoisted.da9ce7b5.js"}],"routeData":{"route":"/work","type":"page","pattern":"^\\/work\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work.astro","pathname":"/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/404.d05432fa.css","assets/7d2cbc10.fde9a4ed.css"],"scripts":[],"routeData":{"route":"/404","type":"page","pattern":"^\\/404\\/?$","segments":[[{"content":"404","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/404.astro","pathname":"/404","_meta":{"trailingSlash":"ignore"}}}],"site":"https://jerecho.com/","base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/astro/hoisted.js?q=0":"hoisted.da9ce7b5.js","astro:scripts/before-hydration.js":""},"assets":["/assets/404.d05432fa.css","/assets/24de80a9.406290d0.css","/assets/7d2cbc10.fde9a4ed.css","/assets/b0310eba.c0214181.css","/assets/ba54dbed.f0c838aa.css","/assets/index.5684ed37.css","/assets/work.3ff128d3.css","/favicon.ico","/hoisted.da9ce7b5.js","/robots.txt","/assets/arcanys-full.png","/assets/arcanys.png","/assets/bi_arrow-left-short.svg","/assets/bloomlocal-full.png","/assets/bloomlocal.png","/assets/bx_link-alt.svg","/assets/circle-stroke.svg","/assets/coconut.svg","/assets/codepen.svg","/assets/cta-arrow.svg","/assets/dots.svg","/assets/dribbble.svg","/assets/elearning-full.png","/assets/elearning.png","/assets/fake_cursor.svg","/assets/fav.svg","/assets/floristmart-full.png","/assets/floristmart.png","/assets/footer-dots.svg","/assets/logo-stroke.svg","/assets/me.png","/assets/me.svg","/assets/mountains.svg","/assets/ocean.svg","/assets/og-cover.png","/assets/propertybanter-full.png","/assets/propertybanter.png","/assets/registernow-full.png","/assets/registernow.png","/assets/stroke-bg.svg","/assets/youtube.svg"]}), {
+const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/7d2cbc10.9dce70f1.css","assets/ba54dbed.f0c838aa.css","assets/24de80a9.406290d0.css","assets/index.4b30b1ae.css"],"scripts":[{"type":"external","value":"hoisted.a946be85.js"}],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/intro","type":"page","pattern":"^\\/home\\/intro\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"intro","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/intro.md","pathname":"/home/intro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/work","type":"page","pattern":"^\\/home\\/work\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/work.md","pathname":"/home/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.9dce70f1.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.a946be85.js"}],"routeData":{"route":"/work/floristmart","type":"page","pattern":"^\\/work\\/floristmart\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"floristmart","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/floristmart.md","pathname":"/work/floristmart","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.9dce70f1.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.a946be85.js"}],"routeData":{"route":"/work/ratemyagent","type":"page","pattern":"^\\/work\\/ratemyagent\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"ratemyagent","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/ratemyagent.md","pathname":"/work/ratemyagent","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.9dce70f1.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.a946be85.js"}],"routeData":{"route":"/work/registernow","type":"page","pattern":"^\\/work\\/registernow\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"registernow","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/registernow.md","pathname":"/work/registernow","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.9dce70f1.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.a946be85.js"}],"routeData":{"route":"/work/bloomlocal","type":"page","pattern":"^\\/work\\/bloomlocal\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"bloomlocal","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/bloomlocal.md","pathname":"/work/bloomlocal","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.9dce70f1.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.a946be85.js"}],"routeData":{"route":"/work/arcanys","type":"page","pattern":"^\\/work\\/arcanys\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"arcanys","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/arcanys.md","pathname":"/work/arcanys","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.9dce70f1.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.a946be85.js"}],"routeData":{"route":"/work/aelf","type":"page","pattern":"^\\/work\\/aelf\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"aelf","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/aelf.md","pathname":"/work/aelf","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/b0310eba.9fdd55dc.css","assets/work.fdd04b62.css","assets/7d2cbc10.9dce70f1.css","assets/ba54dbed.f0c838aa.css"],"scripts":[{"type":"external","value":"hoisted.a946be85.js"}],"routeData":{"route":"/work","type":"page","pattern":"^\\/work\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work.astro","pathname":"/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/404.d05432fa.css","assets/7d2cbc10.9dce70f1.css"],"scripts":[],"routeData":{"route":"/404","type":"page","pattern":"^\\/404\\/?$","segments":[[{"content":"404","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/404.astro","pathname":"/404","_meta":{"trailingSlash":"ignore"}}}],"site":"https://jerecho.com/","base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/astro/hoisted.js?q=0":"hoisted.a946be85.js","astro:scripts/before-hydration.js":""},"assets":["/assets/404.d05432fa.css","/assets/24de80a9.406290d0.css","/assets/7d2cbc10.9dce70f1.css","/assets/b0310eba.9fdd55dc.css","/assets/ba54dbed.f0c838aa.css","/assets/index.4b30b1ae.css","/assets/work.fdd04b62.css","/favicon.ico","/hoisted.a946be85.js","/robots.txt","/assets/arcanys-full.png","/assets/arcanys.png","/assets/bi_arrow-left-short.svg","/assets/bloomlocal-full.png","/assets/bloomlocal.png","/assets/bx_link-alt.svg","/assets/circle-stroke.svg","/assets/coconut.svg","/assets/codepen.svg","/assets/cta-arrow.svg","/assets/dots.svg","/assets/dribbble.svg","/assets/elearning-full.png","/assets/elearning.png","/assets/fake_cursor.svg","/assets/fav.svg","/assets/floristmart-full.png","/assets/floristmart.png","/assets/footer-dots.svg","/assets/logo-stroke.svg","/assets/me.png","/assets/me.svg","/assets/mountains.svg","/assets/ocean.svg","/assets/og-cover.png","/assets/propertybanter-full.png","/assets/propertybanter.png","/assets/registernow-full.png","/assets/registernow.png","/assets/stroke-bg.svg","/assets/youtube.svg"]}), {
 	pageMap: pageMap,
 	renderers: renderers
 });

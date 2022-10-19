@@ -47,6 +47,7 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
     }
     to {
       opacity: 1;
+      transform: translateY(0);
     }
   }
   .work-list {
@@ -122,6 +123,7 @@ const posts = (await Astro.glob<Project>("../pages/work/*.md"))
     animation: anim 500ms forwards;
     max-width: rem(800);
     opacity: 0;
+    transform: translateY(-10px);
     > h5 {
       opacity: var(--opacity);
       font-size: rem(20);
