@@ -1623,21 +1623,21 @@ const $$Intro = createComponent(async ($$result, $$props, $$slots) => {
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<div class="splash-container astro-NGSOTENO">
-  <div class="card-splash astro-NGSOTENO">
-    <h5${addAttribute(frontmatter$7.slogan, "data-copy-sub")} style="--shade: var(--c-gray);" class="astro-NGSOTENO">
+  return renderTemplate`${maybeRenderHead($$result)}<div class="splash-container swup-delay-anim astro-JMN7LE4A" style="animation-delay: var(--delay100);">
+  <div class="card-splash astro-JMN7LE4A">
+    <h5 style="--shade: var(--c-gray); animation-delay: var(--delay200);" class="astro-JMN7LE4A">
       ${frontmatter$7.slogan}
     </h5>
-    <h1${addAttribute(frontmatter$7.title + " " + frontmatter$7.name, "data-copy")} class="astro-NGSOTENO">
+    <h1 class="swup-delay-anim astro-JMN7LE4A" style="animation-delay: var(--delay300);">
       ${frontmatter$7.title}
-      <span class="astro-NGSOTENO">${frontmatter$7.name}</span>
+      <span class="astro-JMN7LE4A">${frontmatter$7.name}</span>
     </h1>
-    <p${addAttribute(frontmatter$7.description, "data-copy-description")} class="astro-NGSOTENO">
+    <p class="swup-delay-anim astro-JMN7LE4A" style="animation-delay: var(--delay400);">
       ${frontmatter$7.description}
     </p>
-    <div class="splash-links astro-NGSOTENO">
-      ${renderComponent($$result, "Link", $$Link, { "url": "/work", "text": "View Portfolio", "className": "cta animTrigger astro-NGSOTENO", "title": "View Portfolio" })}
-      ${renderComponent($$result, "SocialMedia", $$SocialMedia, { "class": "astro-NGSOTENO" })}
+    <div class="splash-links swup-delay-anim astro-JMN7LE4A" style="animation-delay: var(--delay500);">
+      ${renderComponent($$result, "Link", $$Link, { "url": "/work", "text": "View Portfolio", "className": "cta animTrigger astro-JMN7LE4A", "title": "View Portfolio" })}
+      ${renderComponent($$result, "SocialMedia", $$SocialMedia, { "class": "astro-JMN7LE4A" })}
     </div>
   </div>
 </div>
@@ -1666,9 +1666,9 @@ const $$Me = createComponent(async ($$result, $$props, $$slots) => {
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<div class="me-image astro-BZDLSOQ3">
-  <img${addAttribute(me, "src")} alt="Me" class="me astro-BZDLSOQ3" width="317">
-  <img${addAttribute(mepng, "src")} alt="Jech" class="me-png astro-BZDLSOQ3" width="317">
+  return renderTemplate`${maybeRenderHead($$result)}<div class="me-image swup-delay-anim astro-BRJRTZQW" style="animation-delay: var(--delay400)">
+  <img${addAttribute(me, "src")} alt="Me" class="me astro-BRJRTZQW" width="317">
+  <img${addAttribute(mepng, "src")} alt="Jech" class="me-png astro-BRJRTZQW" width="317">
 </div>
 
 `;
@@ -1836,31 +1836,35 @@ const $$PortfolioDetails = createComponent(async ($$result, $$props, $$slots) =>
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<div class="project-container astro-E6REKGCX">
-  <header class="astro-E6REKGCX">
-    ${renderComponent($$result, "Link", $$Link, { "className": "flex-row-reverse animTrigger astro-E6REKGCX", "url": "/work", "text": "back to portfolio", "title": "back to portfolio", "hasIcon": icon })}
+  return renderTemplate`${maybeRenderHead($$result)}<div class="project-container astro-4BUHC7FO">
+  <header class="astro-4BUHC7FO">
+    ${renderComponent($$result, "Link", $$Link, { "className": "flex-row-reverse animTrigger astro-4BUHC7FO", "url": "/work", "text": "back to portfolio", "title": "back to portfolio", "hasIcon": icon })}
   </header>
-  <div class="project-main astro-E6REKGCX">
-    <div class="project-screenshot astro-E6REKGCX">
-      <a${addAttribute(link, "href")} target="_blank" rel="noopener noreferrer" class="astro-E6REKGCX">
-        <img${addAttribute(imgSrcfull, "src")} alt="" width="493" class="astro-E6REKGCX">
+  <div class="project-main astro-4BUHC7FO">
+    <div class="project-screenshot swup-delay-anim astro-4BUHC7FO" style="animation-delay: var(--delay100)">
+      <a${addAttribute(link, "href")} target="_blank" rel="noopener noreferrer" class="astro-4BUHC7FO">
+        <img${addAttribute(imgSrcfull, "src")} alt="" width="493" class="astro-4BUHC7FO">
       </a>
     </div>
-    <div class="project-details astro-E6REKGCX">
-      <header class="astro-E6REKGCX">
-        <h3 class="astro-E6REKGCX">${title}</h3>
-        <a${addAttribute(link, "href")} target="_blank" rel="noopener noreferrer" class="astro-E6REKGCX"><img src="/assets/bx_link-alt.svg" alt="" width="17" class="astro-E6REKGCX">${link}
+    <div class="project-details swup-delay-anim astro-4BUHC7FO" style="animation-delay: var(--delay200)">
+      <header class="swup-delay-anim astro-4BUHC7FO" style="animation-delay: var(--delay300)">
+        <h3 class="astro-4BUHC7FO">${title}</h3>
+        <a${addAttribute(link, "href")} target="_blank" rel="noopener noreferrer" class="astro-4BUHC7FO"><img src="/assets/bx_link-alt.svg" alt="" width="17" class="astro-4BUHC7FO">${link}
         </a>
       </header>
-      <div class="astro-E6REKGCX"><p class="astro-E6REKGCX">${description}</p></div>
-      <div class="astro-E6REKGCX">
-        <h5 class="astro-E6REKGCX">Built With:</h5>
-        <span class="astro-E6REKGCX">${builtwith}</span>
+      <div class="swup-delay-anim astro-4BUHC7FO" style="animation-delay: var(--delay400)">
+        <p class="astro-4BUHC7FO">${description}</p>
       </div>
-      <div class="astro-E6REKGCX">
-        <h5 class="astro-E6REKGCX">Responsibilities:</h5>
-        <ul class="astro-E6REKGCX">
-          ${responsibilities.map((r) => renderTemplate`<li class="astro-E6REKGCX">${r}</li>`)}
+      <div class="swup-delay-anim astro-4BUHC7FO" style="animation-delay: var(--delay500)">
+        <h5 class="astro-4BUHC7FO">Built With:</h5>
+        <span class="astro-4BUHC7FO">${builtwith}</span>
+      </div>
+      <div class="swup-delay-anim astro-4BUHC7FO" style="animation-delay: var(--delay600)">
+        <h5 class="astro-4BUHC7FO">Responsibilities:</h5>
+        <ul class="astro-4BUHC7FO">
+          ${responsibilities.map((r, i) => renderTemplate`<li class="swup-delay-anim astro-4BUHC7FO"${addAttribute("animation-delay:" + (i += 5) + "00ms", "style")}>
+                ${r}
+              </li>`)}
         </ul>
       </div>
     </div>
@@ -1904,7 +1908,6 @@ const $$Work$1 = createComponent(async ($$result, $$props, $$slots) => {
       @media (min-width: 1000px) {
         .container-grid {
           grid-template-rows: 9vh 1fr 6vh;
-          display: grid;
         }
       }
 
@@ -2330,16 +2333,16 @@ const $$WorkList = createComponent(async ($$result, $$props, $$slots) => {
   const STYLES = [];
   for (const STYLE of STYLES)
     $$result.styles.add(STYLE);
-  return renderTemplate`${maybeRenderHead($$result)}<div class="work-list astro-IAQ6CD7H">
-  <div class="heading-panel astro-IAQ6CD7H" style="animation-delay: 300ms">
-    <h5 style="--shade: var(--c-gray);" class="astro-IAQ6CD7H">${frontmatter$6.title}</h5>
-    <p class="astro-IAQ6CD7H">${frontmatter$6.description}</p>
-    <p class="astro-IAQ6CD7H">${frontmatter$6.description2}</p>
+  return renderTemplate`${maybeRenderHead($$result)}<div class="work-list astro-BTULB7EM">
+  <div class="heading-panel swup-delay-anim astro-BTULB7EM" style="animation-delay: var(--delay100)">
+    <h5 style="--shade: var(--c-gray);" class="astro-BTULB7EM">${frontmatter$6.title}</h5>
+    <p class="astro-BTULB7EM">${frontmatter$6.description}</p>
+    <p class="astro-BTULB7EM">${frontmatter$6.description2}</p>
   </div>
-  <ul class="astro-IAQ6CD7H">
-    ${posts.map((post) => renderTemplate`<li class="astro-IAQ6CD7H">
-          <a${addAttribute(post.url, "href")}${addAttribute(post.frontmatter.title, "title")}${addAttribute(post.frontmatter.title, "data-title")} class="animTrigger astro-IAQ6CD7H">
-            <img${addAttribute(post.frontmatter.imgSrc, "src")}${addAttribute(post.frontmatter.title, "alt")} class="astro-IAQ6CD7H">
+  <ul class="astro-BTULB7EM">
+    ${posts.map((post, i) => renderTemplate`<li class="swup-delay-anim astro-BTULB7EM"${addAttribute("animation-delay:" + (i += 3) + "00ms", "style")}>
+          <a${addAttribute(post.url, "href")}${addAttribute(post.frontmatter.title, "title")}${addAttribute(post.frontmatter.title, "data-title")} class="astro-BTULB7EM">
+            <img${addAttribute(post.frontmatter.imgSrc, "src")}${addAttribute(post.frontmatter.title, "alt")} class="astro-BTULB7EM">
           </a>
         </li>`)}
   </ul>
@@ -2395,7 +2398,6 @@ const $$Experience = createComponent(async ($$result, $$props, $$slots) => {
     ${renderComponent($$result, "MetaHead", $$MetaHead, { "title": "Jech | Portfolio", "description": "My name is Jech and I'm a Freelance Web Developer and designer from the Philippines" })}
     <style>
       .container-grid {
-        display: grid;
         grid-template-areas:
           "header"
           "content"
@@ -2554,7 +2556,7 @@ function deserializeManifest(serializedManifest) {
   };
 }
 
-const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/7d2cbc10.ae5a12f9.css","assets/ba54dbed.f0c838aa.css","assets/24de80a9.406290d0.css","assets/index.4b30b1ae.css"],"scripts":[{"type":"external","value":"hoisted.63ace67d.js"}],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/intro","type":"page","pattern":"^\\/home\\/intro\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"intro","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/intro.md","pathname":"/home/intro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/work","type":"page","pattern":"^\\/home\\/work\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/work.md","pathname":"/home/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.ae5a12f9.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.63ace67d.js"}],"routeData":{"route":"/work/floristmart","type":"page","pattern":"^\\/work\\/floristmart\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"floristmart","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/floristmart.md","pathname":"/work/floristmart","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.ae5a12f9.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.63ace67d.js"}],"routeData":{"route":"/work/ratemyagent","type":"page","pattern":"^\\/work\\/ratemyagent\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"ratemyagent","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/ratemyagent.md","pathname":"/work/ratemyagent","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.ae5a12f9.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.63ace67d.js"}],"routeData":{"route":"/work/registernow","type":"page","pattern":"^\\/work\\/registernow\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"registernow","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/registernow.md","pathname":"/work/registernow","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.ae5a12f9.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.63ace67d.js"}],"routeData":{"route":"/work/bloomlocal","type":"page","pattern":"^\\/work\\/bloomlocal\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"bloomlocal","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/bloomlocal.md","pathname":"/work/bloomlocal","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.ae5a12f9.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.63ace67d.js"}],"routeData":{"route":"/work/arcanys","type":"page","pattern":"^\\/work\\/arcanys\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"arcanys","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/arcanys.md","pathname":"/work/arcanys","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.ae5a12f9.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.9fdd55dc.css"],"scripts":[{"type":"external","value":"hoisted.63ace67d.js"}],"routeData":{"route":"/work/aelf","type":"page","pattern":"^\\/work\\/aelf\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"aelf","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/aelf.md","pathname":"/work/aelf","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/b0310eba.9fdd55dc.css","assets/work.f0bd07b8.css","assets/7d2cbc10.ae5a12f9.css","assets/ba54dbed.f0c838aa.css"],"scripts":[{"type":"external","value":"hoisted.63ace67d.js"}],"routeData":{"route":"/work","type":"page","pattern":"^\\/work\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work.astro","pathname":"/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/404.d05432fa.css","assets/7d2cbc10.ae5a12f9.css"],"scripts":[],"routeData":{"route":"/404","type":"page","pattern":"^\\/404\\/?$","segments":[[{"content":"404","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/404.astro","pathname":"/404","_meta":{"trailingSlash":"ignore"}}}],"site":"https://jerecho.com/","base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/astro/hoisted.js?q=0":"hoisted.63ace67d.js","astro:scripts/before-hydration.js":""},"assets":["/assets/404.d05432fa.css","/assets/24de80a9.406290d0.css","/assets/7d2cbc10.ae5a12f9.css","/assets/b0310eba.9fdd55dc.css","/assets/ba54dbed.f0c838aa.css","/assets/index.4b30b1ae.css","/assets/work.f0bd07b8.css","/favicon.ico","/hoisted.63ace67d.js","/robots.txt","/assets/arcanys-full.png","/assets/arcanys.png","/assets/bi_arrow-left-short.svg","/assets/bloomlocal-full.png","/assets/bloomlocal.png","/assets/bx_link-alt.svg","/assets/circle-stroke.svg","/assets/coconut.svg","/assets/codepen.svg","/assets/cta-arrow.svg","/assets/dots.svg","/assets/dribbble.svg","/assets/elearning-full.png","/assets/elearning.png","/assets/fake_cursor.svg","/assets/fav.svg","/assets/floristmart-full.png","/assets/floristmart.png","/assets/footer-dots.svg","/assets/logo-stroke.svg","/assets/me.png","/assets/me.svg","/assets/mountains.svg","/assets/ocean.svg","/assets/og-cover.png","/assets/propertybanter-full.png","/assets/propertybanter.png","/assets/registernow-full.png","/assets/registernow.png","/assets/stroke-bg.svg","/assets/youtube.svg"]}), {
+const _manifest = Object.assign(deserializeManifest({"adapterName":"@astrojs/netlify/functions","routes":[{"file":"","links":["assets/7d2cbc10.b4415afa.css","assets/ba54dbed.f0c838aa.css","assets/24de80a9.406290d0.css","assets/index.ff2f5672.css"],"scripts":[{"type":"external","value":"hoisted.e169a25b.js"}],"routeData":{"route":"/","type":"page","pattern":"^\\/$","segments":[],"params":[],"component":"src/pages/index.astro","pathname":"/","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/intro","type":"page","pattern":"^\\/home\\/intro\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"intro","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/intro.md","pathname":"/home/intro","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":[],"scripts":[],"routeData":{"route":"/home/work","type":"page","pattern":"^\\/home\\/work\\/?$","segments":[[{"content":"home","dynamic":false,"spread":false}],[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/home/work.md","pathname":"/home/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.b4415afa.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.0cebd6f5.css"],"scripts":[{"type":"external","value":"hoisted.e169a25b.js"}],"routeData":{"route":"/work/floristmart","type":"page","pattern":"^\\/work\\/floristmart\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"floristmart","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/floristmart.md","pathname":"/work/floristmart","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.b4415afa.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.0cebd6f5.css"],"scripts":[{"type":"external","value":"hoisted.e169a25b.js"}],"routeData":{"route":"/work/ratemyagent","type":"page","pattern":"^\\/work\\/ratemyagent\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"ratemyagent","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/ratemyagent.md","pathname":"/work/ratemyagent","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.b4415afa.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.0cebd6f5.css"],"scripts":[{"type":"external","value":"hoisted.e169a25b.js"}],"routeData":{"route":"/work/registernow","type":"page","pattern":"^\\/work\\/registernow\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"registernow","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/registernow.md","pathname":"/work/registernow","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.b4415afa.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.0cebd6f5.css"],"scripts":[{"type":"external","value":"hoisted.e169a25b.js"}],"routeData":{"route":"/work/bloomlocal","type":"page","pattern":"^\\/work\\/bloomlocal\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"bloomlocal","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/bloomlocal.md","pathname":"/work/bloomlocal","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.b4415afa.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.0cebd6f5.css"],"scripts":[{"type":"external","value":"hoisted.e169a25b.js"}],"routeData":{"route":"/work/arcanys","type":"page","pattern":"^\\/work\\/arcanys\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"arcanys","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/arcanys.md","pathname":"/work/arcanys","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/7d2cbc10.b4415afa.css","assets/ba54dbed.f0c838aa.css","assets/b0310eba.0cebd6f5.css"],"scripts":[{"type":"external","value":"hoisted.e169a25b.js"}],"routeData":{"route":"/work/aelf","type":"page","pattern":"^\\/work\\/aelf\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}],[{"content":"aelf","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work/aelf.md","pathname":"/work/aelf","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/24de80a9.406290d0.css","assets/b0310eba.0cebd6f5.css","assets/work.2aae429f.css","assets/7d2cbc10.b4415afa.css","assets/ba54dbed.f0c838aa.css"],"scripts":[{"type":"external","value":"hoisted.e169a25b.js"}],"routeData":{"route":"/work","type":"page","pattern":"^\\/work\\/?$","segments":[[{"content":"work","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/work.astro","pathname":"/work","_meta":{"trailingSlash":"ignore"}}},{"file":"","links":["assets/404.d05432fa.css","assets/7d2cbc10.b4415afa.css"],"scripts":[],"routeData":{"route":"/404","type":"page","pattern":"^\\/404\\/?$","segments":[[{"content":"404","dynamic":false,"spread":false}]],"params":[],"component":"src/pages/404.astro","pathname":"/404","_meta":{"trailingSlash":"ignore"}}}],"site":"https://jerecho.com/","base":"/","markdown":{"drafts":false,"syntaxHighlight":"shiki","shikiConfig":{"langs":[],"theme":"github-dark","wrap":false},"remarkPlugins":[],"rehypePlugins":[],"remarkRehype":{},"extendDefaultPlugins":false,"isAstroFlavoredMd":false},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","/astro/hoisted.js?q=0":"hoisted.e169a25b.js","astro:scripts/before-hydration.js":""},"assets":["/assets/404.d05432fa.css","/assets/24de80a9.406290d0.css","/assets/7d2cbc10.b4415afa.css","/assets/b0310eba.0cebd6f5.css","/assets/ba54dbed.f0c838aa.css","/assets/index.ff2f5672.css","/assets/work.2aae429f.css","/favicon.ico","/hoisted.e169a25b.js","/robots.txt","/assets/arcanys-full.png","/assets/arcanys.png","/assets/bi_arrow-left-short.svg","/assets/bloomlocal-full.png","/assets/bloomlocal.png","/assets/bx_link-alt.svg","/assets/circle-stroke.svg","/assets/coconut.svg","/assets/codepen.svg","/assets/cta-arrow.svg","/assets/dots.svg","/assets/dribbble.svg","/assets/elearning-full.png","/assets/elearning.png","/assets/fake_cursor.svg","/assets/fav.svg","/assets/floristmart-full.png","/assets/floristmart.png","/assets/footer-dots.svg","/assets/logo-stroke.svg","/assets/me.png","/assets/me.svg","/assets/mountains.svg","/assets/ocean.svg","/assets/og-cover.png","/assets/propertybanter-full.png","/assets/propertybanter.png","/assets/registernow-full.png","/assets/registernow.png","/assets/stroke-bg.svg","/assets/youtube.svg"]}), {
 	pageMap: pageMap,
 	renderers: renderers
 });
