@@ -1,30 +1,18 @@
 ---
-import Header from "../components/Header.astro";
-import MetaHead from "../components/MetaHead.astro";
+import Button from "@components/Button/Button.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <MetaHead
-      title="Jech | Not Found"
-      description="My name is Jech and I'm a Freelance Web Developer and designer from the Philippines"
-    />
-    <style>
-      main {
-        margin-inline: auto;
-        max-width: 1040px;
-        height: 70vh;
-        display: grid;
-        place-content: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container-grid">
-      <Header />
-      <main class="main-container transition-fade" id="swup">
-        <h1>404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 404 </h1>
-      </main>
-    </div>
-  </body>
-</html>
+<BaseLayout title="404" description="Error 404 page not found." noindex={true}>
+	<section class="site-container pt-36 text-center md:pt-44">
+		<div class="mx-auto max-w-xl px-4 text-center">
+			<h1 class="h1">Page not found!</h1>
+			<p class="description mt-4">
+				Apologies, one of our links must have broken. Please try again or go back to the homepage.
+			</p>
+			<div class="mt-8 flex justify-center">
+				<Button variant="primary" href="/">Go to homepage</Button>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
