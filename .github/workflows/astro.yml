@@ -1,37 +1,42 @@
-name: Deploy Astro Site
+name: GitHub Pages
 
 on:
   push:
+    branches: [master]
+  pull_request:
     branches: [master]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+        with:
+          submodules: true
+          fetch-depth: 0
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # cache: 'npm'  # REMOVE CACHE COMPLETELY
-      
-      - name: Install dependencies
-        run: |
-          npm install
-          # Or use npm ci without cache
-          # npm ci --no-cache
-      
+
+      - name: Install
+        run: npm install
+
       - name: Build
         run: npm run build
-      
-      - name: Add .nojekyll
-        run: touch ./dist/.nojekyll
-      
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          # OR use github_token (for personal/organization sites):
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           publish_branch: gh-pages
+          # For project sites:
+          external_repository: username/repo-name
+          keep_files: false
