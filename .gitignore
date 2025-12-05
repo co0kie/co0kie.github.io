@@ -1,0 +1,6 @@
+out
+.next
+node_modules
+recording
+codepen/test
+*.vscode
