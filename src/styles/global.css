@@ -1,0 +1,143 @@
+:root {
+  /* 
+  Color pallete : https://mycolor.space/?hex=%2316161D&sub=1
+  background dark: #16161D
+  foreground light: #E2F1F0
+  accent 1:  #408D8A
+  accent 2:  #5BECC0
+  */
+  --f-rubik: "Rubik Glitch", cursive;
+  --f-roboto: "Roboto", sans-serif;
+  --f-roboto-mono: "Roboto Mono", monospace;
+  --f-abel: "Abel", sans-serif;
+  --c-black: #16161d;
+  --c-green: #5becc0;
+  --c-blue: #abcee5;
+  --c-gray: #28293f;
+  --c-gray-100: #cacad4;
+  --c-gray-200: #494949;
+  --c-gray-300: #767687;
+  --c-gray-400: #a1a1a1;
+  --c-gray-500: #8d8d8d;
+  --c-white: #e2f1f0;
+  --c-youtube: #f00;
+  --c-dribbble: #ea4c89;
+
+  --c-bg-white: #ebebcf;
+  --c-bg-gradient-1: #101014;
+  --c-bg-gradient-2: #060606;
+  --c-bg-gradient-3: #0c0e11;
+
+  --c-body-gradient-1: 0, 198, 195;
+  --c-body-gradient-2: 21, 133, 130;
+  --c-body-gradient-3: 211, 251, 216;
+  --c-black-gradient-1: 22, 22, 29;
+
+  --t-fg: var(--c-black);
+  --t-bg: var(--c-white);
+  --t-active: var(--c-blue);
+
+  --h-full: 100vh;
+  --w-full: 62.5rem; /* 1000px; */
+
+  --p-tiny: 0.7rem;
+  --m-tiny: 0.7rem;
+  --p-medium: 2rem;
+  --m-medium: 2rem;
+  --m-large: 5rem;
+
+  --radius: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  color: var(--c-gray-100);
+  font-family: "Abel", sans-serif;
+  background-color: var(--c-black);
+  padding: var(--p-medium);
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--c-black);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--c-gray-100);
+  border-radius: 20px;
+  border: 3px solid var(--c-black);
+}
+@media (min-width: 768px) {
+  body {
+    padding: calc(var(--p-medium));
+  }
+}
+* {
+  box-sizing: content-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--c-white);
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  font-size: var(--f-u8);
+  line-height: 1;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+html.is-rendering .main-container,
+html.is-changing .main-container,
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+@keyframes anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.swup-delay-anim {
+  --delay100: 100ms;
+  --delay200: 200ms;
+  --delay300: 300ms;
+  --delay400: 400ms;
+  --delay500: 500ms;
+  --delay600: 600ms;
+  animation: anim 500ms forwards;
+  opacity: 0;
+  transform: translateY(-10px);
+}

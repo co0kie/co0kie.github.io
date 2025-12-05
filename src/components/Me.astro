@@ -1,0 +1,48 @@
+---
+const me = "./assets/me.svg";
+const mepng = "./assets/me.png";
+---
+
+<div class="me-image swup-delay-anim" style="animation-delay: var(--delay400)">
+  <img src={me} alt="Me" class="me" width="317" />
+  <img src={mepng} alt="Jech" class="me-png" width="317" />
+</div>
+
+<style lang="scss">
+  @import "../styles/mixin.scss";
+  .me-image {
+    position: relative;
+    text-align: center;
+    transition: 200ms;
+
+    &:hover {
+      .me {
+        filter: blur(7px) opacity(0);
+        &-png {
+          filter: blur(0) opacity(1);
+        }
+      }
+    }
+  }
+  .me {
+    &-png {
+      filter: blur(7px) opacity(0);
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      transition: 300ms;
+      max-width: rem(300);
+      @include bp(1000){
+        left: inherit;
+      }
+    }
+    @include bp(1000) {
+      margin-left: auto;
+      display: block;
+      max-width: rem(300);
+    }
+  }
+</style>

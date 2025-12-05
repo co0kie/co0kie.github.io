@@ -1,0 +1,112 @@
+---
+import * as splash from "../pages/home/intro.md";
+import Link from "./Link.astro";
+import SocialMedia from "./SocialMedia.astro";
+---
+
+<div
+  class="splash-container swup-delay-anim"
+  style="animation-delay: var(--delay100);"
+>
+  <div class="card-splash">
+    <h5 style="--shade: var(--c-gray); animation-delay: var(--delay200);">
+      {splash.frontmatter.slogan}
+    </h5>
+    <h1 class="swup-delay-anim" style="animation-delay: var(--delay300);">
+      {splash.frontmatter.title}
+      <span>{splash.frontmatter.name}</span>
+    </h1>
+    <p class="swup-delay-anim" style="animation-delay: var(--delay400);">
+      {splash.frontmatter.description}
+    </p>
+    <div
+      class="splash-links swup-delay-anim"
+      style="animation-delay: var(--delay500);"
+    >
+      <Link
+        url="/work"
+        text="View Portfolio"
+        className="cta animTrigger"
+        title="View Portfolio"
+      />
+      <SocialMedia />
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  @import "../styles/mixin.scss";
+  .splash-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--m-medium);
+    @include bp(768) {
+      flex-direction: row;
+    }
+  }
+  .splash-container {
+    position: relative;
+    margin-top: var(--m-large);
+    margin-bottom: var(--m-large);
+    @include bp(1000) {
+      margin-block: auto;
+    }
+  }
+  .card-splash {
+    cursor: default;
+    max-width: rem(680);
+    > h5 {
+      --shade: rgba(var(--c-gray), 0.58);
+      opacity: var(--opacity);
+      font-size: rem(20);
+      font-weight: 600;
+      margin-bottom: rem(20);
+      color: var(--c-white);
+      font-weight: 400;
+      font-family: var(--f-roboto-mono);
+      width: fit-content;
+      padding: rem(10) rem(20);
+      position: relative;
+      background-image: linear-gradient(
+        var(--shade, --defaultShadeColor),
+        var(--shade, --defaultShadeColor)
+      );
+      background-size: 70% rem(20);
+      background-repeat: no-repeat;
+      background-position: 0 calc(rem(20) / 5);
+    }
+    > h1 {
+      font-size: 7vw;
+      font-weight: 100;
+      color: var(--c-white);
+      font-family: var(--f-abel);
+      margin-bottom: calc(8vw / 2);
+      > span {
+        color: var(--c-green);
+      }
+      @include bp(600) {
+        font-size: 5vw;
+      }
+      @include bp(1024) {
+        margin-bottom: calc(4vw / 2);
+      }
+      @include bp(1224) {
+        font-size: rem(53);
+        margin-bottom: calc(rem(53) / 2);
+      }
+    }
+    > p {
+      font-size: rem(18);
+      color: var(--c-gray-400);
+      line-height: 1.7;
+      letter-spacing: 1px;
+      font-family: var(--f-roboto-mono);
+      font-weight: 100;
+      margin: 0;
+      @include bp(1050) {
+        width: rem(510);
+        font-size: rem(20);
+      }
+    }
+  }
+</style>
