@@ -23,7 +23,6 @@ jobs:
       # Fresh install
       - name: Install dependencies
         run: |
-          rm -rf node_modules package-lock.json
           npm ci --no-audit --prefer-offline
 
       - name: Build
